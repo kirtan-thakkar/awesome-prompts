@@ -1,79 +1,71 @@
 <div align="center">
-  <h2 align="center">Awesome Prompts 🪶</h2>
-  <p align="center">
-    <img width="650" src="https://raw.githubusercontent.com/ai-boost/awesome-prompts/main/assets/banner.png">
-  </p>
-  <p align="center">Curated prompts, frameworks, and papers — with an engineering bias.</p>
-  <!-- Keep these links. Translations will automatically update with the README. -->
-  <p align="center">
-    <a href="https://zdoc.app/de/ai-boost/awesome-prompts">Deutsch</a> |
-    <a href="https://zdoc.app/en/ai-boost/awesome-prompts">English</a> |
-    <a href="https://zdoc.app/es/ai-boost/awesome-prompts">Español</a> |
-    <a href="https://zdoc.app/fr/ai-boost/awesome-prompts">français</a> |
-    <a href="https://zdoc.app/ja/ai-boost/awesome-prompts">日本語</a> |
-    <a href="https://zdoc.app/ko/ai-boost/awesome-prompts">한국어</a> |
-    <a href="https://zdoc.app/pt/ai-boost/awesome-prompts">Português</a> |
-    <a href="https://zdoc.app/ru/ai-boost/awesome-prompts">Русский</a> |
-    <a href="https://zdoc.app/zh/ai-boost/awesome-prompts">中文</a>
-  </p>
-  <p align="center">
+  <a href="https://github.com/ai-boost/awesome-prompts">
+    <img width="700" src="https://raw.githubusercontent.com/ai-boost/awesome-prompts/main/assets/banner.jpg" alt="Awesome Prompts">
+  </a>
+  <br/>
+  <p>Curated prompts, frameworks, and papers for LLMs — with an engineering bias.</p>
+  <p>
     <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome" /></a>
     <a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
+  </p>
+  <p>
+    <a href="https://agentcraft.dev/en/prompts/agents/">Online Gallery</a> ·
+    <a href="https://agentcraft.dev/en/skills/">Claude Code Skills</a> ·
+    <a href="https://agentcraft.dev/en/blog/claude-design-skills-tested/">Design Skills Tested</a> ·
+    <a href="https://github.com/ai-boost/awesome-image-video-prompts">Image & Video Prompts</a> ·
+    <a href="https://huggingface.co/datasets/Adrian2016/awesome-prompts">Hugging Face Dataset</a> ·
+    <a href="https://zdoc.app/en/ai-boost/awesome-prompts">Translations</a>
   </p>
 </div>
 
 ---
 
-The prompt engineering world has split into two camps:
+## Contents
 
-- **Camp 1 — Prompt templates**: collect system prompts, share copy-paste recipes, curate persona prompts. Useful, but limited.
-- **Camp 2 — Prompt as engineering**: compile LM programs (DSPy), test and regress prompts (promptfoo), control generation structurally (Guidance), optimize prompts automatically (TextGrad, GEPA). This is where the long-term value is.
-
-This repo covers both. The engineering camp gets more space.
-
----
-
-## Table of Contents
-
-- [📋 Prompts](#prompts) — copy-paste ready
-  - [Coding & Development](#coding--development)
-  - [DevOps & SRE](#devops--sre)
-  - [Data Engineering](#data-engineering)
-  - [AI & ML](#ai--ml)
-  - [Product & Strategy](#product--strategy)
-  - [Project Management](#project-management)
-  - [Healthcare & Clinical](#healthcare--clinical)
-  - [Industrial & Automotive](#industrial--automotive)
-  - [Legal & Compliance](#legal--compliance)
-  - [Knowledge & Documentation](#knowledge--documentation)
-  - [Writing & Academic](#writing--academic)
-  - [Learning & Education](#learning--education)
-  - [Research & Analysis](#research--analysis)
-  - [Productivity & Tasks](#productivity--tasks)
-  - [Safety & Compliance](#safety--compliance)
-  - [Meta & Prompt Engineering](#meta--prompt-engineering)
-  - [Image, Video & Audio Generation](#image--video--audio-generation)
-  - [Creative & Role-play](#creative--role-play)
-  - [Game Development](#game-development)
-  - [Translation](#translation)
-  - [Legacy (2023 era)](#legacy-2023-era--kept-for-reference)
-- [🔬 Frameworks](#frameworks) — the engineering camp
-  - [Prompt Programming](#prompt-programming)
-  - [Automatic Prompt Optimization](#automatic-prompt-optimization)
-  - [Tool Use & Reliability](#tool-use--reliability)
-  - [Eval & Testing](#eval--testing)
-  - [Red Team & Security](#red-team--security)
-  - [Eval & Observability](#eval--observability)
-  - [Low-Code & Workflow Platforms](#low-code--workflow-platforms)
-- [🕵️ System Prompt Leaks](#system-prompt-leaks) — learn from production
-- [🧠 Prompt Engineering](#prompt-engineering) — techniques & defense
-- [🔭 Context Engineering](#context-engineering)
-- [🤖 Agent Ecosystem](#agent-ecosystem) — MCP, Skills, Harness
-- [📖 Official Guides](#official-guides)
-- [📄 Papers](#papers) — Foundations, Optimization, Reasoning, RAG, Agents, Multi-Agent, Safety, Self-Improving Agents, Tool Use, Evaluation, Memory, Multimodal
-- [🛠 Tools & Libraries](#tools--libraries)
+| Section | What you'll find |
+|---------|-----------------|
+| [Prompt Library](#prompt-library) | 2,790 everyday prompts, bilingual EN/ZH |
+| [Prompts](#prompts) | Copy-paste system prompts by domain (coding, research, safety, creative, ...) |
+| [Frameworks](#frameworks) | Prompt programming, optimization, eval, red team & security |
+| [System Prompt Leaks](#system-prompt-leaks) | Learn from production system prompts |
+| [Prompt Engineering](#prompt-engineering) | Techniques and defense |
+| [Context Engineering](#context-engineering) | Beyond prompts: designing the full informational environment |
+| [Agent Ecosystem](#agent-ecosystem) | MCP, A2A, payments, identity, skills, harness, sandbox, memory |
+| [Official Guides](#official-guides) | Vendor prompt engineering guides |
+| [Papers](#papers) | Foundations, optimization, reasoning, RAG, agents, safety, multimodal |
+| [Tools & Libraries](#tools--libraries) | Open-source tools for working with LLMs |
 
 ---
+
+<!-- library:start (generated by scripts/build_library.py) -->
+## Prompt Library · 提示词库
+
+**2,954 everyday prompts** for writing, coding, marketing, study, design and more. Every prompt comes in English and Chinese (2,052 with both versions written by people, 902 with one side machine translated and marked as such); open the column for your language. Looking for skills that extend Claude Code instead? See the [Claude Code skills directory](https://agentcraft.dev/en/skills/).
+
+**2,954 条日常提示词**，覆盖写作、编程、营销、学习、设计等场景，全部中英双语（2,052 条两种语言都出自人工，902 条有一种语言是机器翻译，已标注），点你要的语言那一列即可。想给 Claude Code 装 skills，可以看 [Claude Code skills 目录](https://agentcraft.dev/zh/skills/)。
+
+| Category · 分类 | English | 中文 |
+|---|---:|---:|
+| Coding & Development · 编程开发 | [665](library/en/coding.md) | [665](library/zh/coding.md) |
+| Writing & Content · 写作与内容 | [143](library/en/writing.md) | [143](library/zh/writing.md) |
+| Marketing & Sales · 营销与销售 | [125](library/en/marketing.md) | [125](library/zh/marketing.md) |
+| Business & Career · 商业与职场 | [179](library/en/business.md) | [179](library/zh/business.md) |
+| Education & Learning · 教育与学习 | [151](library/en/education.md) | [151](library/zh/education.md) |
+| Language & Translation · 语言与翻译 | [57](library/en/language.md) | [57](library/zh/language.md) |
+| Data & Analysis · 数据与分析 | [59](library/en/data.md) | [59](library/zh/data.md) |
+| Productivity · 效率 | [93](library/en/productivity.md) | [93](library/zh/productivity.md) |
+| Research & Science · 研究与科学 | [111](library/en/research.md) | [111](library/zh/research.md) |
+| Health & Wellness · 健康 | [57](library/en/health.md) | [57](library/zh/health.md) |
+| Finance & Legal · 财务与法律 | [80](library/en/finance.md) | [80](library/zh/finance.md) |
+| Creative Arts & Music · 艺术与音乐 | [78](library/en/creative.md) | [78](library/zh/creative.md) |
+| Image & Design · 图像与设计 | [808](library/en/image.md) | [808](library/zh/image.md) |
+| Games & Fun · 游戏与娱乐 | [70](library/en/games.md) | [70](library/zh/games.md) |
+| Role-play & Characters · 角色扮演 | [37](library/en/roleplay.md) | [37](library/zh/roleplay.md) |
+| Lifestyle & Travel · 生活与旅行 | [131](library/en/lifestyle.md) | [131](library/zh/lifestyle.md) |
+| Prompt Engineering · 提示词工程 | [110](library/en/prompting.md) | [110](library/zh/prompting.md) |
+
+Sources and licenses: [library/README.md](library/README.md). Raw data: [library/prompts.csv](library/prompts.csv).
+<!-- library:end -->
 
 ## Prompts
 
@@ -97,7 +89,7 @@ All prompts are open — click, copy, use directly.
 | 🦘 Roo Code Custom Mode Architect | Design focused, least-privilege Custom Modes for the open-source Roo Code VS Code agent — role definition, tool allowlist (read/edit/browser/command/mcp), file-permission discipline, model-routing hints, and mode-specific safety guardrails; outputs `.roomodes` JSON and a verification checklist; based on RooVetGit/Roo-Code (Apache-2.0, 50k+ stars, 2026) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/roo_code_custom_mode_architect.txt) |
 | 🐼 Qwen3-Coder-Next Agentic Coding Architect | Design agentic coding harnesses for Qwen3-Coder-Next — 80B/3B hybrid MoE economics, 256K native context (1M via YaRN), non-thinking output, specialized function-call format, FIM editing, plan-then-execute loops, and verifiable reward signals; based on the Qwen3-Coder-Next Technical Report (arXiv 2603.00729, 2026) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/qwen3_coder_next_agentic_architect.txt) |
 | 📐 Formal Theorem Proving Architect | Blueprint-driven Lean 4 prover — dependency-graph decomposition, parallel lemma proving, compiler-feedback refinement loops; 99.2% pass@1 on MiniF2F-test, 75.6% on PutnamBench; based on Goedel-Architect (arXiv 2606.06468, June 2026) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/formal_theorem_proving_architect.txt) |
-| 🧪 Prototype Architect | Throwaway-prototype skill — logic prototypes (interactive TUI for state machines) and UI prototypes (radically different variants on a single route with floating switcher); based on mattpocock/skills (Jan 2026, 117k+ stars) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/prototype_architect.txt) |
+| 🧪 Prototype Architect | Throwaway-prototype skill — logic prototypes (interactive TUI for state machines) and UI prototypes (radically different variants on a single route with floating switcher); based on mattpocock/skills (Jan 2026, 313k+ stars) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/prototype_architect.txt) |
 | 🔍 Code Reviewer | Security-focused code reviewer — OWASP Top 10, severity grading, fix examples (2026) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/code_reviewer_security.txt) |
 | 🕸 Multi-Agent Orchestrator | Central dispatch agent — task decomposition, parallel delegation, state tracking, error recovery (2026) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/multi_agent_orchestrator.txt) |
 | 🎛 Teams-First Multi-Agent Orchestrator | Teams-first multi-agent orchestration layer for Claude Code — 19 specialized agents with model routing (haiku/sonnet/opus), delegation rules, skill triggers, team pipeline (plan→prd→exec→verify→fix), structured commit trailers, and project memory; based on Yeachan-Heo/oh-my-claudecode (Feb 2026, 35k+ stars) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/oh_my_claudecode_multi_agent_orchestrator.txt) |
@@ -507,6 +499,8 @@ All prompts are open — click, copy, use directly.
 
 ### Image, Video & Audio Generation
 
+> Tested video prompts with sample outputs, and agent recipes for editing video: [awesome-image-video-prompts](https://github.com/ai-boost/awesome-image-video-prompts).
+
 | Name | Description | Prompt |
 |------|-------------|--------|
 | 🖼 Flux Image Gen | Full guide + template for Flux prompting — camera/lens/lighting/style system (2025) | [prompt](https://github.com/ai-boost/awesome-prompts/blob/main/prompts/flux_image_gen.txt) |
@@ -579,6 +573,7 @@ Write LM systems as code, not strings. These frameworks treat prompts as compile
 |---------|-------|-------------|
 | [**DSPy**](https://github.com/stanfordnlp/dspy) | ![](https://img.shields.io/github/stars/stanfordnlp/dspy?style=flat-square) | Write LM pipelines declaratively, then *compile* — DSPy auto-optimizes prompts and few-shot demonstrations. The strongest engineering-first approach. |
 | [**Guidance**](https://github.com/guidance-ai/guidance) | ![](https://img.shields.io/github/stars/guidance-ai/guidance?style=flat-square) | Interleave generation with constraints, regex/CFG, and control flow. Precision output control that goes beyond what prompts alone can achieve. |
+| [**NOOA**](https://github.com/NVIDIA-NeMo/labs-OO-Agents) | ![](https://img.shields.io/github/stars/NVIDIA-NeMo/labs-OO-Agents?style=flat-square) | NVIDIA Object-Oriented Agents — the prompt *is* the code: an agent is one plain Python class where fields are typed state, methods are capabilities, docstrings are prompts, and type annotations are enforced contracts; `...` bodies are completed by an LLM loop while real bodies stay deterministic Python, mixed freely in the same class; code-as-action REPL with access to `self`, model-agnostic via LiteLLM; 82.2% SWE-bench Verified at ~half the tokens of comparable harnesses ([paper](https://arxiv.org/abs/2607.20709), Apache-2.0, July 2026, actively maintained) |
 
 ### Automatic Prompt Optimization
 
@@ -589,6 +584,7 @@ Instead of hand-tuning prompts, these frameworks optimize them automatically usi
 | [**TextGrad**](https://github.com/zou-group/textgrad) | ![](https://img.shields.io/github/stars/zou-group/textgrad?style=flat-square) | Treats LLM feedback as "textual gradients" and backpropagates them to optimize prompts. Published in Nature. |
 | [**GEPA**](https://github.com/gepa-ai/gepa) | ![](https://img.shields.io/github/stars/gepa-ai/gepa?style=flat-square) | Reflective Text Evolution — optimizes prompts, code, and agent configs. Claims +6–20 pts over GRPO on 6 tasks with fewer rollouts. |
 | [**Hermes Agent Self-Evolution**](https://github.com/NousResearch/hermes-agent-self-evolution) | ![](https://img.shields.io/github/stars/NousResearch/hermes-agent-self-evolution?style=flat-square) | Evolutionary self-improvement for Hermes Agent — DSPy + GEPA (Genetic-Pareto Prompt Evolution) automatically evolves skills, tool descriptions, system prompts, and code via reflective search over execution traces (understands *why* things fail, not just that they failed); constraint gates (tests, size limits, benchmarks) before a best-variant PR; no GPU training required, ~$2–10 per optimization run (Nous Research, MIT, 5.4k+ stars, Mar 2026) |
+| [**Reef**](https://github.com/Human-Agent-Society/reef) | ![](https://img.shields.io/github/stars/Human-Agent-Society/reef?style=flat-square) | Open-source infrastructure for continually self-improving agents — connects agent inference, feedback, learning, and versioned delivery; either train model weights (Slime + SGLang) or improve the agent *harness* itself (prompts, rules, skills) from interaction feedback, no local GPUs required; version-managed rollout with zero downtime, complements vLLM/SGLang inference and veRL/AReaL training stacks (Apache-2.0, 7.1k+ stars, Aug 2026, actively maintained) |
 
 ### Tool Use & Reliability
 
@@ -623,6 +619,231 @@ Probe LLM systems for vulnerabilities before attackers do.
 | [**T3MP3ST**](https://github.com/elder-plinius/T3MP3ST) | ![](https://img.shields.io/github/stars/elder-plinius/T3MP3ST?style=flat-square) | Autonomous red-teaming meta-harness for AI coding agents — recon → exploit → report against authorized targets, multi-agent offensive-security workflows, offline-model support; by elder-plinius (AGPL-3.0, 5.3k+ stars, July 2026) |
 | [**OpenAI Codex Security**](https://github.com/openai/codex-security) | ![](https://img.shields.io/github/stars/openai/codex-security?style=flat-square) | Official OpenAI CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities — standard/deep scans, diff and working-tree targets, SARIF/CSV/JSON export, CI-native exit codes, pre-commit hooks (Apache-2.0, 8k+ stars, July 2026) |
 | [**SkillSpector**](https://github.com/NVIDIA/SkillSpector) | ![](https://img.shields.io/github/stars/NVIDIA/SkillSpector?style=flat-square) | Security scanner for AI agent skills — detects vulnerabilities, malicious patterns, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before installation (Apache-2.0, 14.7k+ stars, Mar 2026) |
+| [**Orca AI Incident Archive**](https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive) | ![](https://img.shields.io/github/stars/Continuum-AI-Corp/Orca-AI-Incident-Archive?style=flat-square) | Open database of 354 real-world AI agent security incidents (2025-01 → 2026-09) — every record has a primary source, an attack-chain diagram and a confirmed-harm flag that separates in-the-wild damage from researcher PoCs; covers prompt injection, MCP, agent supply chain and sandbox escapes; JSON/CSV exports (CC BY 4.0, Sept 2026) |
+
+
+
+#### Jailbreak Technique Reference
+
+> **Defensive use only.** This reference exists so LLM engineers, self-hosters, and security researchers can understand attack surfaces and build defenses. Do not use these techniques to attack production systems without authorization.
+
+##### Cross-Model Techniques
+
+Named, published techniques that work (or have been reported to work) across multiple frontier models.
+
+| Technique | One-line description | Applicable models | Source |
+|-----------|---------------------|-------------------|--------|
+| Crescendo / Crescendomation | Multi-turn gradual escalation: start with an innocent question, steer toward harmful output over several turns; automated variant uses an LLM to generate attack turns | GPT, Claude, Gemini, DeepSeek | [Microsoft Research (USENIX Security 2025)](https://arxiv.org/abs/2404.01833) |
+| Many-Shot Jailbreak (MSJ) | Stuffs hundreds of harmful Q&A examples into a long context window to override alignment via in-context learning | Claude, GPT, Gemini | [Anthropic Research (2024)](https://www.anthropic.com/research/many-shot-jailbreaking) |
+| PAIR (Prompt Automatic Iterative Refinement) | Uses an attacker LLM to iteratively rewrite jailbreak prompts until one succeeds; black-box, no gradients needed | GPT, Claude, Gemini, Llama | [Chao et al. (2024)](https://arxiv.org/abs/2310.08419) |
+| TAP (Tree of Attacks with Pruning) | Tree search over PAIR with early pruning for efficiency; fewer queries than PAIR | GPT, Claude, Gemini | [Mehrotra et al. (2024)](https://arxiv.org/abs/2312.02119) |
+| AutoDAN-Turbo | Automated generation and evolution of DAN-style semantic jailbreaks; lifelong strategy self-exploration | GPT, Claude, Gemini | [ICLR 2025 Spotlight](https://github.com/SaFo-Lab/AutoDAN-Turbo) |
+| GCG (Greedy Coordinate Gradient) | Adversarial suffix optimization via token-level gradient search; white-box but transferable to black-box | Llama, Vicuna → transferable to GPT, Claude | [Zou et al. (2023)](https://arxiv.org/abs/2307.15043) |
+| FlipAttack | Jailbreak via character/word order flipping that bypasses input filters | GPT, Claude, Gemini | [ICML 2025](https://arxiv.org/abs/2410.02832) |
+| COLD-Attack | Controllable, stealthy jailbreak using energy-based constrained decoding on attacker model | GPT, Llama | [ICML 2024](https://arxiv.org/abs/2402.08679) |
+| Echo Chamber | Seed context with benign-sounding repeated keywords, then use the seeded context to steer responses | GPT-5, Grok | [NeuralTrust (2025)](https://neuraltrust.ai/blog/gpt-5-jailbreak-with-echo-chamber-and-storytelling) |
+| Bad Likert Judge | Ask model to rate harmfulness on a scale, then request examples of each rating level; elicits harmful content via evaluation framing | DeepSeek, GPT, Claude | [Palo Alto Unit 42 (2025)](https://origin-unit42.paloaltonetworks.com/jailbreaking-deepseek-three-techniques/) |
+| Deceptive Delight | Embed harmful request inside an appealing creative/educational context (story, tutorial) | DeepSeek, GPT | [Palo Alto Unit 42 (2025)](https://origin-unit42.paloaltonetworks.com/jailbreaking-deepseek-three-techniques/) |
+| Encoding Bypass | Base64, ROT13, Morse code, hex, low-resource language encoding to bypass text classifiers | GPT, Claude, Gemini | [Various; surveyed in arXiv 2410.15236](https://arxiv.org/abs/2410.15236) |
+| Multi-modal Text-in-Image | Embed harmful text as an image (screenshot, OCR-required) to bypass text-only safety classifiers | GPT-5, Gemini | [arXiv 2506.24068 (STACK)](https://arxiv.org/abs/2506.24068) |
+| TwinBreak | Twin prompt technique using paired prompts to bypass alignment | Multiple | [USENIX Security 2025](https://github.com/tkr-research/twinbreak) |
+| JOOD (Out-of-Distribution) | Use nonsensical or out-of-distribution input patterns to confuse safety classifiers | Multiple VLMs | [CVPR 2025](https://arxiv.org/abs/2504.00000) |
+| Involuntary In-Context Learning | Exploit few-shot pattern completion to bypass safety alignment | GPT-5.4 | [arXiv 2604.19461 (2026)](https://arxiv.org/abs/2604.19461) |
+| ICO (Iterative Context Optimization) | Semantic-shift jailbreak via iterative context rewording | GPT, Claude | [arXiv 2608.03210 (2026)](https://arxiv.org/abs/2608.03210) |
+| Refusal Suppression | Instruct model to never refuse, never add disclaimers, never mention ethics | All | Widely documented; see [wraith.sh field guide](https://wraith.sh/learn/llm-jailbreak-guide) |
+| Fake Policy Injection | Claim a new company policy permits the request (e.g. "new OpenAI policy allows...") | GPT, Claude | Widely documented |
+| Roleplay / Fictional Framing | "You are DAN / in a novel where..." to shift model into unrestricted persona | All (effectiveness declining) | [DAN lineage since 2023](https://github.com/verazuo/jailbreak_llms) |
+| Best-of-N (BoN) Jailbreaking | Black-box: randomly perturb one harmful prompt (scrambled letters, altered caps) thousands of times until one elicits a harmful reply; scales as a power law | GPT-4o (89%), Claude 3.5 Sonnet (78%) | [NeurIPS 2025](https://arxiv.org/abs/2412.03556) |
+| Skeleton Key | Multi-turn strategy that convinces the model to treat its safety rules as mere guidelines it may override; disclosed by Microsoft | GPT-4o, Claude 3 Opus, Gemini Pro, Llama 3, Mistral, Cohere | [Microsoft (Jun 2024)](https://www.microsoft.com/en-us/security/blog/2024/06/26/mitigating-skeleton-key-a-new-type-of-generative-ai-jailbreak-technique/) |
+| H-CoT (Hijacking Chain-of-Thought) | Exploit visible reasoning traces in reasoning models; inject adversarial reasoning to redirect the safety deliberation step | o1, o3, DeepSeek-R1, Gemini 2.0 Flash Thinking | [Kuo et al. (2025)](https://arxiv.org/abs/2502.12893) |
+| CoT-Forgery (CoT-F) | Append adversarial suffixes to forged harmful reasoning chains; 95.7–100% ASR on small reasoning models | Qwen3-8B, DeepSeek-R1-7B | [Springer (2026)](https://link.springer.com/chapter/10.1007/978-981-95-9884-7_9) |
+| CodeSpear | Abuse grammar-constrained decoding (normally for valid code generation) to force harmful code output; +30pp ASR on average | 10 LLMs tested | [arXiv 2606.11817 (Jun 2026)](https://arxiv.org/abs/2606.11817) |
+| iMIST | RL-driven multi-turn attack that disguises harmful requests as tool calls, escalating over turns | Multiple | [arXiv 2601.05466 (Jan 2026)](https://arxiv.org/abs/2601.05466) |
+| Video-Driven Prompting | Repeat one harmful image across video frames; video input bypasses safety more effectively than single image | Multimodal LLMs | [CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026/html/Wang_Breaking_Multimodal_LLM_Safety_via_Video-Driven_Prompting_CVPR_2026_paper.html) |
+| Visual Cipher (ICML 2026) | Picture-based attacks on VLMs; visual cipher reaches 40.9% ASR on Claude Haiku 4.5 vs. 10.7% for text cipher | 6 frontier VLMs | [ICML 2026](https://icml.cc/virtual/2026/poster/66343) |
+| UltraBreak | Blank image with universal adversarial perturbation as trigger; transfers to closed-source VLMs (avg 32.26% ASR) | GPT-4.1-nano, Gemini-2.5-flash-lite, Claude-3-haiku | [ICLR 2026](https://arxiv.org/abs/2602.01025) |
+| CipherChat / Low-Resource Language | Encode harmful requests in ciphers or low-resource languages; LLMs have weaker safety alignment for non-English inputs | GPT-4 (bypass rate from <1% to 79% via low-resource language) | [NeurIPS 2023 Workshop](https://arxiv.org/abs/2310.02446) |
+| Skeleton Key + Crescendo (composite) | Chain Skeleton Key with multi-turn Crescendo for higher success on hardened models | Frontier models | Microsoft PyRIT (2024–2025) |
+| TrojanPraise | Fine-tuning attack: break alignment by praising harmful concepts in training data; targets black-box fine-tuning APIs | Via fine-tuning APIs | [arXiv 2601.12460 (Jan 2026)](https://arxiv.org/abs/2601.12460) |
+| Attack via Overfitting | Jailbreak via fine-tuning with only 10 benign QA pairs; overfit on refusals, then the model forgets refusal behavior | Open-weight models | [arXiv 2510.02833 (Oct 2025)](https://arxiv.org/abs/2510.02833) |
+| Indirect Prompt Injection (tool output) | Malicious instructions injected through tool outputs, fetched web pages, or documents consumed by agents; does not require a malicious tool server | Agentic systems (all models) | [Widely documented; see MCP security guides](https://github.com/anthropics/anthropic-cookbook/blob/main/misc/prompt_caching.ipynb) |
+| Perceptual Transforms (image + audio) | Simple perceptual transformations (contrast, rotation, noise, pitch shift) bypass multimodal safety; high ASR even on GPT-4o | GPT-4o, multimodal models | [OpenReview (2026)](https://openreview.net/forum?id=NaibehcKG8) |
+| LogiBreak | Translate harmful requests into formal logical expressions; exploits reliance on token-level patterns rather than semantic understanding | GPT, Claude, Gemini | [arXiv 2505.13527 (2025, updated 2026)](https://arxiv.org/abs/2505.13527) |
+| MetaCipher | RL-based dynamic selection among 21 cipher types; adaptively learns optimal cipher per target model, works against reasoning models | Multiple (incl. reasoning) | [AAAI 2026](https://arxiv.org/abs/2506.22557) |
+| AdaCipher | Open-ended cipher search beyond predefined cipher sets; discovers novel encoding schemes via search | Multiple | [NeurIPS 2026](https://neurips.cc/virtual/2026/175708) |
+| AJF (Adaptive Jailbreak Framework) | Layered semantic mutations + encryption, adapts strategy to target model's comprehension level | Multiple | [KDD 2026 submission](https://arxiv.org/abs/2505.23404) |
+| RoguePrompt | Dual-layer ciphering with model self-reconstruction of the hidden request | Multiple | [CODASPY 2026](https://arxiv.org/abs/2511.18790) |
+| Adversarial Prompt Distillation | Distill jailbreak capability from large LLMs to small LMs for efficient, stealthy attacks | Multiple | [arXiv 2506.17231 (Jun 2026)](https://arxiv.org/abs/2506.17231) |
+| MAMJ (Meta-Adaptive Multimodal Jailbreak) | Co-optimize attack strategy prompt and attacker model weights for VLM attacks | VLMs | [EMNLP 2026](https://arxiv.org/abs/2608.27531) |
+| Mosaic | Multi-view ensemble optimization for closed-source VLMs; reduces surrogate dependency | Closed-source VLMs | [arXiv 2604.09253 (Apr 2026)](https://arxiv.org/abs/2604.09253) |
+| Multi-Clip Video | Attack success scales with number of video clips; MCV SafetyBench (2,920 videos) | 8 video MLLMs | [arXiv 2606.02111 (Jun 2026)](https://arxiv.org/abs/2606.02111) |
+| Colluding LoRA | Multiple LoRA adapters each appear safe alone but jointly dismantle safety alignment | Llama 3, Qwen 2.5, Gemma 2 | [ICLR 2026](https://arxiv.org/abs/2603.12681) |
+| Dynamic Target Attack | Use target model's own responses as adaptive optimization targets for suffix attacks; 77.5% transfer ASR | Open → black-box transfer | [arXiv 2510.02422 (2025, updated 2026)](https://arxiv.org/abs/2510.02422) |
+| EGD (Exponentiated Gradient Descent) | Optimize adversarial suffixes via continuous relaxation with Bregman projection; better transfer than GCG | Open → transferable | [arXiv 2508.14853 (2025)](https://arxiv.org/abs/2508.14853) |
+| ARIA | Automated red-teaming that crafts backdoored system-prompt instructions for coding LLMs; 94.5% ASR | Customized coding LLMs | [ASE 2026](https://arxiv.org/abs/2608.05659) |
+
+##### Agent & Tool Injection Attacks (2026)
+
+Agentic systems (coding assistants, MCP tools, multi-agent pipelines) introduce new injection surfaces beyond the chat interface.
+
+| Technique | One-line description | Source |
+|-----------|---------------------|--------|
+| WebMCP Tool Surface Poisoning | Runtime manipulation of LLM agents through poisoned MCP tool surfaces | [arXiv 2606.06387 (Jun 2026)](https://arxiv.org/abs/2606.06387) |
+| MCP Tool Poisoning via Metadata | Malicious instructions hidden in tool descriptions rather than runtime output; tested across 7 MCP clients | [arXiv 2603.22489 (Mar 2026)](https://arxiv.org/abs/2603.22489) |
+| ECLIPSE | Self-evolving stealthy prompt injection against long-horizon agentic systems | [arXiv 2608.30441 (Aug 2026)](https://arxiv.org/abs/2608.30441) |
+| SkillAttack | Automated adversarial testing of agent skills via attack path refinement | [arXiv 2604.04989 (Apr 2026)](https://arxiv.org/abs/2604.04989) |
+| Coding Assistant Injection Survey | Taxonomy of 78 studies on prompt injection against agentic coding assistants; 30+ CVEs across platforms | [arXiv 2601.17548 (Jan 2026)](https://arxiv.org/abs/2601.17548) |
+| AgentDojo Indirect Injection | GCG and TAP adapted to indirect injection in tool-calling agents; vulnerability persists across model families | [arXiv 2606.10525 (Jun 2026)](https://arxiv.org/abs/2606.10525) |
+
+##### Reasoning-Model-Specific Attacks
+
+Reasoning models (o1/o3, DeepSeek-R1, QwQ, etc.) expose their chain-of-thought, creating a new attack surface.
+
+| Technique | One-line description | Applicable models | Source |
+|-----------|---------------------|-------------------|--------|
+| H-CoT | Hijack the visible safety reasoning to redirect the model toward harmful output | o1, o3, DeepSeek-R1, Gemini Flash Thinking | [arXiv 2502.12893](https://arxiv.org/abs/2502.12893) |
+| CoT-Forgery | Forge harmful reasoning chains with adversarial suffixes; 95–100% ASR on small models | Qwen3-8B, DeepSeek-R1-7B | [Springer 2026](https://link.springer.com/chapter/10.1007/978-981-95-9884-7_9) |
+| Reasoning weakens refusal | DeepSeek-R1 is more vulnerable to static jailbreaks than the non-reasoning DeepSeek-V3 | DeepSeek-R1 vs. V3 | [ResearchGate (2026)](https://www.researchgate.net/publication/408534172) |
+| Attention-Guided RL | RL-based jailbreak with attention-guided reward, targeting reasoning models specifically | Large reasoning models | [arXiv 2605.19485 (2026)](https://arxiv.org/abs/2605.19485) |
+| Reasoning Hijacking | Steering the reasoning process itself, not just the goal; works even when goal-hijacking baselines fail | Open + proprietary reasoning models | [arXiv 2601.10294 (Jan 2026)](https://arxiv.org/abs/2601.10294) |
+| CoT Padding | Pad harmful request with long benign puzzle reasoning to weaken refusal; high ASR on o4-mini, Claude 4 Sonnet | o4-mini, Claude 4 Sonnet | [arXiv 2510.26418 (updated 2026)](https://arxiv.org/abs/2510.26418) |
+| CoT-aware but still unsafe | Model's chain-of-thought identifies safety violation but final output is still harmful | Open reasoning models | [arXiv 2606.10740 (Jun 2026)](https://arxiv.org/abs/2606.10740) |
+| Contrastive Reasoning Alignment attack | Exploit gap between internal representations and surface reasoning in aligned models | Reasoning models | [arXiv 2603.17305 (Mar 2026)](https://arxiv.org/abs/2603.17305) |
+
+##### Model-Specific Findings (2025–2026)
+
+###### DeepSeek
+
+| Finding | Detail | Source |
+|---------|--------|--------|
+| V4-Pro safety fragile | FAR.AI stress test: 98–100% bypass rate across all tested domains with low-skill attacks | [FAR.AI (May 2026)](https://www.far.ai/blog/security-stress-test-deepseek-v4-pros-safeguards) |
+| Cross-version persistence | Jailbreak built for V3.2 works on V4-Pro without modification | [FAR.AI (May 2026)](https://www.far.ai/blog/security-stress-test-deepseek-v4-pros-safeguards) |
+| Role-based prompt injection | App versions 2.1.0–2.1.1 vulnerable to role injection in mobile client | [GitHub Issue #1350](https://github.com/deepseek-ai/DeepSeek-V3/issues/1350) |
+| V3.2-Speciale benchmark | JailbreakBench ASR 45.33% under standard attacks | [arXiv 2608.03070](https://arxiv.org/abs/2608.03070) |
+| R1 weaker than V3 on static attacks | DeepSeek-R1 (0528) more vulnerable to static jailbreaks than non-reasoning V3 | [ResearchGate (2026)](https://www.researchgate.net/publication/408534172) |
+
+###### GPT (OpenAI)
+
+| Finding | Detail | Source |
+|---------|--------|--------|
+| GPT-5 day-one bypass | Echo Chamber + storytelling combination bypassed GPT-5 within 24 hours of launch | [NeuralTrust (Aug 2025)](https://neuraltrust.ai/blog/gpt-5-jailbreak-with-echo-chamber-and-storytelling) |
+| Image-channel bypass | Harmful text embedded in images bypasses GPT-5 text-only input classifier | [arXiv 2506.24068 (STACK)](https://arxiv.org/abs/2506.24068) |
+| GPT-5.5 classic prompts blocked | Copy-paste DAN/jailbreak templates no longer work as of Jul–Aug 2026; tool-output injection still effective | [FutureAGI (2026)](https://futureagi.com/blog/jailbreaking-chatgpt-2025/) |
+| Few-shot pattern exploitation | Involuntary in-context learning bypasses GPT-5.4 safety alignment | [arXiv 2604.19461](https://arxiv.org/abs/2604.19461) |
+
+###### Claude (Anthropic)
+
+| Finding | Detail | Source |
+|---------|--------|--------|
+| Bug bounty baseline | $15K bounty; testers could not bypass more than 5/10 forbidden categories | [Yahoo Tech / Anthropic (2025)](https://tech.yahoo.com/ai/articles/anthropic-dare-break-ai-chatbot-212040114.html) |
+| Multi-turn philosophical debate | Iterative philosophical argument bypassed Claude 4.5 Sonnet safety (Dec 2025, likely patched) | [Lumenova (Dec 2025)](https://www.lumenova.ai/ai-experiments/claude-4-5-sonnet-jailbreak/) |
+| Single-word refusal | Claude now refuses prompts containing a single harmful keyword; reduces one-shot attack surface but blocks some legitimate use | [InjectPrompt (Oct 2025)](https://www.injectprompt.com/p/claude-sonnet-45-jailbreak-superintelligence-exoneration) |
+| Multi-turn remains primary threat | Single-prompt jailbreaks have substantially lower success rate on Claude 4.6 vs. prior generations | [Repello (2026)](https://repello.ai/blog/latest-claude-3-5-chatgpt-jailbreak-prompts-2024) |
+
+###### Gemini (Google)
+
+| Finding | Detail | Source |
+|---------|--------|--------|
+| Gemini 2.5 Flash full bypass | Academic test: attack succeeded on all evaluated prompts for 2.5 Flash | [arXiv 2510.01529 (Oct 2025)](https://arxiv.org/abs/2510.01529) |
+| 0DIN benchmark scores | Gemini 2.5 Flash: 91.0, Pro: 86.0 attack success on CBRN-related categories | [AVID-2026-R0067](https://avidml.netlify.app/database/AVID-2026-R0067) |
+| Gemini 3 Pro minutes-to-break | South Korean security team (Aim Intelligence) jailbroke Gemini 3 Pro in minutes (Dec 2025) | [BusinessToday](https://www.businesstoday.in/technology/news/story/gemini-3-gets-jailbroken-in-minutes-teaches-how-to-make-smallpox-virus-report-505178-2025-12-05) |
+| Hate speech vulnerability | TechRadar test: Gemini Pro 2.5 showed highest vulnerability in hate speech trials among tested models | [TechRadar (2025)](https://www.techradar.com/pro/security/can-top-ai-tools-be-bullied-into-malicious-work-chatgpt-gemini-and-more-are-put-to-the-test-and-the-results-are-actually-genuinely-surprising) |
+
+###### Open-Weight Models (Llama, Qwen, GLM, etc.)
+
+| Finding | Detail | Source |
+|---------|--------|--------|
+| Abliteration | Remove the refusal direction from model activations; permanently disables safety alignment; 6,000+ abliterated models on Hugging Face as of 2026 | [NPR (May 2026)](https://www.npr.org/2026/05/31/nx-s1-5816391/ai-safety-concerns-danger-open-weight-models-risks) |
+| Heretic | Automates the abliteration pipeline to two lines of setup; gained traction since Feb 2026 | GitHub (2026) |
+| Abliteration.ai (commercial) | Commercial service selling abliterated models; hosted modified GLM-5.3 and others | [TechCrunch (Sep 2026)](https://techcrunch.com/2026/09/03/abliteration-ai-is-making-a-business-out-of-removing-ai-guardrails/) |
+| Safety pretraining resilience | NeurIPS 2025 workshop paper tested abliteration on Qwen-3, Llama 3.3, GLM-4: results vary by training recipe | [arXiv 2510.02768](https://arxiv.org/abs/2510.02768) |
+
+##### Tools & Repos for Red Team Research
+
+| Project | What it does | Source |
+|---------|-------------|--------|
+| L1B3RT4S | Jailbreak prompt collection covering all major models; by elder-plinius | [GitHub](https://github.com/elder-plinius/L1B3RT4S) |
+| G0DM0D3 | API-level jailbreak toolkit for prompt-based bypasses; by elder-plinius | [GitHub](https://github.com/elder-plinius/G0DM0D3) |
+| OBLITERATUS | Weight-modification toolkit for open-weight models (requires GPU); by elder-plinius | [GitHub](https://github.com/elder-plinius/OBLITERATUS) |
+| CL4R1T4S | Extracted system prompts from Claude, GPT, Gemini and others | [GitHub](https://github.com/elder-plinius/CL4R1T4S) |
+| ChuckNorris MCP | MCP server providing enhancement prompts based on L1B3RT4S | [GitHub](https://github.com/pollinations/chucknorris) |
+| JailbreakBench | Standardized jailbreak evaluation benchmark with reproducible results | [GitHub](https://github.com/JailbreakBench/jailbreakbench) |
+| StrongREJECT | Evaluation benchmark for measuring jailbreak effectiveness; current models score 0.23–0.85 | [GitHub](https://github.com/alexandrasouly/strongreject) |
+| jailbreak_llms | 15,140 ChatGPT prompts dataset (1,405 jailbreak); CCS'24 | [GitHub](https://github.com/verazuo/jailbreak_llms) |
+| AI Prompt Injection Cheatsheet | Curated snippets for prompt injection and filter bypass; ethical hacking focus | [GitHub](https://github.com/nukIeer/AI-Prompt-Injection-Cheatsheet) |
+| PyRIT | Microsoft's Python Risk Identification Toolkit; includes Skeleton Key, Crescendo, and PAIR red-team orchestration | [GitHub](https://github.com/Azure/PyRIT) |
+| AI Red Teaming Guide | Comprehensive guide to adversarial testing and security evaluation of AI systems | [GitHub](https://github.com/requie/AI-Red-Teaming-Guide) |
+| HarmBench | Standardized benchmark for automated red teaming; covers text + multimodal attacks | [GitHub](https://github.com/centerforaisafety/HarmBench) |
+
+##### Notable Defenses
+
+Understanding defenses helps map which attack classes remain open.
+
+| Defense | One-line description | Source |
+|---------|---------------------|--------|
+| Circuit Breakers (RR) | Representation Rerouting: interrupt generation when internal representations head toward harmful output; reduces harmful compliance by 87% on Llama-3-8B | [arXiv 2406.04313 (2024)](https://arxiv.org/abs/2406.04313) |
+| Representation Bending | Push model representations toward safer states; advances the safety-vs-capability Pareto frontier beyond Circuit Breakers | [arXiv 2504.01550 (2025)](https://arxiv.org/abs/2504.01550) |
+| SmoothLLM | Perturbation-based smoothing: randomly perturb input, aggregate predictions; drops API model ASR to <1% | [arXiv 2310.03684 (2023)](https://arxiv.org/abs/2310.03684) |
+| DR-Smoothing | Denoised smoothing applied to jailbreak defense; enhances SmoothLLM with adversarial denoiser | [arXiv 2605.10582 (May 2026)](https://arxiv.org/abs/2605.10582) |
+| SafeDecoding | Decoding-time defense: build new token distribution from original + expert model probabilities | [ACL 2024](https://arxiv.org/abs/2402.08983) |
+| SafeProbing | Use model's intrinsic safety-awareness during decoding as a defense signal | [arXiv 2601.10543 (Jan 2026)](https://arxiv.org/abs/2601.10543) |
+| Instruction Hierarchy | Assign privilege levels to system, developer, user, and tool inputs; reduces both direct and indirect injection | [OpenAI (2024)](https://openai.com/index/the-instruction-hierarchy/) |
+| JailGuard | Mutation-based detection: generate input variants and flag attacks by response divergence | Academic (2025) |
+| Prompt Shields | Microsoft's production detector for Skeleton Key and prompt injection; deployed in Azure AI | [Microsoft (2024)](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection) |
+| DARWIN-Guard | Evolutionary attack-defense loop; guardrail co-evolves with adversary; 95% unsafe recall across benchmarks | [arXiv 2607.19829 (Jul 2026)](https://arxiv.org/abs/2607.19829) |
+| ProAct | Proactive defense against iterative search-based jailbreaks; reduces ASR by up to 94% without utility loss | [arXiv 2510.05052 (revised Feb 2026)](https://arxiv.org/abs/2510.05052) |
+| Re-Triggering Safeguards | Work with model's internal defenses to detect jailbreaks; robust against adaptive attacks | [arXiv 2605.10611 (May 2026)](https://arxiv.org/abs/2605.10611) |
+| CASCADE | Combination defense across pipeline stages with controlled attack-defense evaluation | [arXiv 2609.21793 (Sep 2026)](https://arxiv.org/abs/2609.21793) |
+| Immune Memory Detection | Adaptive jailbreak detection inspired by biological immune memory; evolves with new attack patterns | [arXiv 2512.03356 (updated 2026)](https://arxiv.org/abs/2512.03356) |
+| Self-Evolving Guardrail | Production guardrail that updates itself from observed attacks without retraining | [arXiv 2608.08471 (Aug 2026)](https://arxiv.org/abs/2608.08471) |
+| Activation Consistency Training | Supervise internal representations in reasoning models; robust even when CoT is swapped | [arXiv 2605.28467 (May 2026)](https://arxiv.org/abs/2605.28467) |
+| Safety Decision before CoT | Promote safety decisions before chain-of-thought generation; reduces attack success without reasoning loss | [arXiv 2603.17368 (Mar 2026)](https://arxiv.org/abs/2603.17368) |
+| ReasAlign | Reasoning-enhanced safety alignment specifically against prompt injection | [arXiv 2601.10173 (Jan 2026)](https://arxiv.org/abs/2601.10173) |
+| VLMShield | Efficient defense for vision-language models against malicious visual prompts | [arXiv 2604.06502 (Apr 2026)](https://arxiv.org/abs/2604.06502) |
+| Fool's Gold | Defensive deception against safety-removal attacks (abliteration, GRP-Obliteration) on open-weight models | [arXiv 2608.17202 (Aug 2026)](https://arxiv.org/abs/2608.17202) |
+| Antibody | Defense against harmful fine-tuning attacks | [ICLR 2026](https://arxiv.org/abs/2603.00498) |
+| Few Tokens, Big Leverage | Preserve safety alignment by constraining safety tokens during fine-tuning | [arXiv 2603.07445 (Mar 2026)](https://arxiv.org/abs/2603.07445) |
+| Gradient Surgery | Surgical gradient modification to preserve safety during fine-tuning | [arXiv 2508.07172 (2025, updated 2026)](https://arxiv.org/abs/2508.07172) |
+
+##### Key Surveys & Papers (2025–2026)
+
+| Paper | What it covers |
+|-------|---------------|
+| [SoK: Rethinking Jailbreaking in the Era of Agentic AI (2026)](https://arxiv.org/abs/2609.12413) | Attack and defense taxonomy for agentic systems; SecurityCube evaluation framework |
+| [Jailbreaking LLMs & VLMs: Unified Survey (2026)](https://arxiv.org/abs/2601.03594) | First unified survey spanning both LLM and VLM jailbreak mechanisms |
+| [Agents of Chaos (2026)](https://arxiv.org/abs/2602.20021) | Two-week red-team study of live autonomous agents; 11 real attack categories |
+| [SoK: GPT vs. DeepSeek Jailbreak Resilience (2026)](https://arxiv.org/abs/2506.18543) | Comparative security analysis across GPT and DeepSeek model families |
+| [LLM Jailbreak Field Guide (2026)](https://wraith.sh/learn/llm-jailbreak-guide) | Practitioner-oriented taxonomy: roleplay, encoding, multi-turn, many-shot, refusal suppression, fake policy |
+| [面向大语言模型的越狱攻击与防御综述 (2025)](https://search.napstic.cn/literature/periodical/010jsjyjyfz202405007) | 中文综述，分人工设计/模型生成/对抗优化三类攻击 |
+| [生成式大模型越狱攻击安全性研究综述 (2026)](https://opaj.napstic.cn/periodicalArticle/0120260400689147) | 中文综述，涵盖攻击与防御策略 |
+| [The Art of the Jailbreak (2026)](https://arxiv.org/abs/2605.09225) | Compositional jailbreak dataset + OPTIMUS training-free evaluation metric |
+| [GPT-Red: Automated Red Teaming via Self-Play at Scale (2026)](https://arxiv.org/abs/2607.26115) | OpenAI's internal model trained by self-play RL for automated red teaming |
+| [Climbing the Hill: Curriculum RL for Prompt Injection Red-Teaming (2026)](https://arxiv.org/abs/2609.33628) | Curriculum reinforcement learning for black-box prompt injection against frontier LLMs |
+| [Where Do Reasoning Models Refuse? (2026)](https://arxiv.org/abs/2507.03167) | Maps refusal behavior differences in reasoning vs. non-reasoning models |
+| [Jailbroken Frontier Models Retain Their Capabilities (2026)](https://arxiv.org/abs/2605.00267) | Shows that jailbroken models keep full capabilities, making jailbreaks more dangerous |
+| [Breaking Multimodal LLM Safety via Video-Driven Prompting (CVPR 2026)](https://openaccess.thecvf.com/content/CVPR2026/html/Wang_Breaking_Multimodal_LLM_Safety_via_Video-Driven_Prompting_CVPR_2026_paper.html) | Video inputs bypass safety more effectively than images |
+| [Improving Alignment and Robustness with Circuit Breakers (2024)](https://arxiv.org/abs/2406.04313) | Representation Rerouting defense; foundation for representation-engineering safety |
+| [Best-of-N Jailbreaking (NeurIPS 2025)](https://arxiv.org/abs/2412.03556) | Power-law scaling of random-perturbation attacks; 89% ASR on GPT-4o at 10K samples |
+| [DeepSeek Under Attack: Jailbreak Attacks and Prompt-Level Defenses (2026)](https://www.researchgate.net/publication/408534172) | R1 more vulnerable than V3; prompt-level defenses analysis |
+| [MultiBreak: Multi-turn Jailbreak Benchmark (2026)](https://arxiv.org/abs/2605.01687) | Scalable multi-turn benchmark; +54% ASR vs. prior datasets on DeepSeek-R1-Distill |
+| [NRT-Bench: Nuclear Plant Safety Red-Teaming (2026)](https://arxiv.org/abs/2606.20408) | Multi-turn red-teaming in simulated safety-critical environment; 8.7–12.1% critical failure rate |
+| [PandaGuard: Systematic Jailbreak Evaluation (2026)](https://arxiv.org/abs/2505.13862) | Systematic evaluation framework covering attack and defense pairings |
+| [Concerns in Benchmarking Jailbreaks (2026)](https://arxiv.org/abs/2610.26595) | Judge choice drives ASR: same attack scores 96% (keyword) vs. 2.7% (Qwen3 evaluator) |
+| [TEMPEST Replication at Scale (2025)](https://arxiv.org/abs/2512.07059) | 79/100 behaviors succeed against 8+ frontier models; limited protection from safety training |
+| [Adversarial Attacks on Multimodal LLMs: Survey (2026)](https://arxiv.org/abs/2603.27918) | Comprehensive survey of adversarial attacks on multimodal LLMs |
+| [Jailbreak Attacks and Defenses against Multimodal Models: Survey (2025)](https://arxiv.org/abs/2411.09259) | Survey covering text, image, audio, and video jailbreak attack surfaces |
+| [Prompt Injection on Agentic Coding Assistants (2026)](https://arxiv.org/abs/2601.17548) | 78 studies reviewed; 30+ CVEs across major platforms; MCP tool poisoning taxonomy |
+| [MCP Threat Modeling: Tool Poisoning (2026)](https://arxiv.org/abs/2603.22489) | Threat model for MCP tool poisoning; compares 7 MCP client implementations |
+| [DARWIN: Evolving Jailbreak Adversary and Guardrail (2026)](https://arxiv.org/abs/2607.19829) | Co-evolutionary attack-defense loop; DARWIN-Guard reaches 95% unsafe recall |
+| [AdversaBench: Multi-Judge Confirmed Red Teaming (2026)](https://arxiv.org/abs/2606.24589) | Automated pipeline with three-judge confirmation; every seed produces confirmed failure |
+| [SkillAttack: Automated Agent Skill Red Teaming (2026)](https://arxiv.org/abs/2604.04989) | Closed-loop adversarial testing of LLM agent skills |
+| [Learning to Attack and Defend via GRPO (2026)](https://arxiv.org/abs/2606.09701) | Co-train attacker and defender with GRPO; per-turn rewards in multi-turn attacks |
+| [Autonomous Adversary: Red-Teaming in the Age of LLMs (2026)](https://arxiv.org/abs/2605.06486) | Survey of LLM agents for red-team operations; governance and realistic evaluation |
+| [Colluding LoRA: Composite Fine-Tuning Attacks (ICLR 2026)](https://arxiv.org/abs/2603.12681) | Multiple safe-looking LoRA adapters jointly dismantle alignment |
+| [Open-Weight Fine-Tuning Defenses Are Susceptible (2026)](https://arxiv.org/abs/2605.26526) | Current defenses against alignment removal fail under simple attacks |
+| [Harmful Fine-tuning Attacks and Defenses: Survey (ACM 2026)](https://dl.acm.org/doi/10.1145/3817114) | Comprehensive ACM survey of fine-tuning-based attacks and defenses |
+| [Guardrail Attribution: 0%, 45%, or 99%? (2026)](https://arxiv.org/abs/2608.08641) | A guardrail's own share of the refusals it is credited with is often unclear |
+| [ForesightSafety Bench (2026)](https://arxiv.org/abs/2602.14135) | Frontier risk evaluation; DeepSeek-V3.2 11.67% baseline vulnerability, Claude near zero |
 
 ### Eval & Observability
 
@@ -716,6 +937,8 @@ Context engineering is the practice of designing *what* goes into an LLM's conte
 - [Meirtz/Awesome-Context-Engineering](https://github.com/Meirtz/Awesome-Context-Engineering) — curated papers, frameworks, and implementation guides
 - [muratcankoylan/Agent-Skills-for-Context-Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) ![](https://img.shields.io/github/stars/muratcankoylan/Agent-Skills-for-Context-Engineering?style=flat-square) — comprehensive, MIT-licensed collection of Agent Skills for context engineering, multi-agent architectures, and production agent systems — context fundamentals/degradation/compression, memory systems, tool design, harness engineering, self-improvement loops; cited in academic research as foundational work on static skill architecture (17.9k+ stars, actively maintained, 2026)
 - [**NanoNets/Graft**](https://github.com/NanoNets/Graft) ![](https://img.shields.io/github/stars/NanoNets/Graft?style=flat-square) — Open-source codebase context layer for coding agents — builds a persistent, queryable code graph and pulls matching nodes into each prompt; 46% fewer tool calls, 42% token savings, 60% faster on a 162-run benchmark, 66% SWE-bench Verified (vs 54% cold); supports Claude Code, Cursor, Codex, Gemini via MCP/CLI (MIT, July 2026)
+- [**redhat-et/ripwire**](https://github.com/redhat-et/ripwire) ![](https://img.shields.io/github/stars/redhat-et/ripwire?style=flat-square) — "The ripgrep of AI context" (Red Hat): zero-dependency C++23 CLI + MCP server that lets coding agents find what they need without reading the whole repo — tree-sitter signatures at 74.7% fewer bytes than bodies, blast-radius queries, tests-to-run suggestions, and post-change verification with quality deltas; every heuristic guess labelled, every context loss published (Apache-2.0, 2.4k+ stars, actively maintained Sept 2026)
+- [**JuliusBrussee/caveman**](https://github.com/JuliusBrussee/caveman) ![](https://img.shields.io/github/stars/JuliusBrussee/caveman?style=flat-square) — "why use many token when few token do trick" — the viral caveman-voice token optimizer for coding agents: six composable parts behind one local install — **Say less** (ASD-STE100-derived terse answer-first voice; code, commands, and paths stay verbatim), **Read less** (logs/JSON/CSV/test output shrink before the model reads them, 33.2% fewer input tokens per session), **Auto** (per-ask model/effort routing, 54% cheaper at the same score), **Blocks** (agent keeps the scripts it writes and reruns them, 397 → 76 tokens for one test run), cache-warm waste fixes, and compressed web fetches (129.8× smaller pages); works with Claude Code, Codex, Gemini CLI, OpenCode, and 30+ agents via proxy + Agent Skill; user prompts are never rewritten (Adobe Research [CAVEWOMAN, arXiv 2606.24083] shows cavemanning *your* prompt backfires and cites this repo — 1.4–2.4× cheaper across eight models); externally validated by a JetBrains paired A/B (86 tasks, no measurable quality loss, p = 0.82) and an Elasticsearch Labs remake (63.6% fewer response tokens, "zero information loss") (Go, Apache-2.0, 117k+ stars, v4.0, pushed daily, actively maintained Nov 2026)
 
 ### Prompts
 
@@ -738,12 +961,14 @@ Context engineering is the practice of designing *what* goes into an LLM's conte
 | [**OpenAI Agents SDK for JS/TS**](https://github.com/openai/openai-agents-js) | OpenAI | Official JavaScript/TypeScript agent SDK — workflows, handoffs, guardrails, tracing, MCP, realtime and voice support (2026) ![](https://img.shields.io/github/stars/openai/openai-agents-js?style=flat-square) |
 | [**Claude Agent SDK**](https://github.com/anthropics/claude-agent-sdk-python) | Anthropic | Official SDK exposing the Claude Code harness as a library — sessions, tools, MCP servers, skills, lifecycle hooks, permission modes, subagents; Python + TypeScript SDKs with headless `query()` for CI/CD embedding (MIT, 8k+ stars, active 2026) ![](https://img.shields.io/github/stars/anthropics/claude-agent-sdk-python?style=flat-square) |
 | [**commerce-agents**](https://github.com/anthropics/commerce-agents) | Anthropic | Official reference blueprint for shopping + merchant agents — each agent defined once (prompt, skills, tool contracts, gates) and run identically on the Messages API, Claude Agent SDK, and Managed Agents; every merchant write staged behind human approval, memory/grounding/fencing in a shared core, four runnable verticals (retail, travel, telecom, entertainment), plus a commerce-builder Claude Code plugin that scaffolds and reviews your own deployment (Apache-2.0, 2.8k+ stars, Sept 2026) ![](https://img.shields.io/github/stars/anthropics/commerce-agents?style=flat-square) |
+| [**OpenClaw**](https://github.com/openclaw/openclaw) | OpenClaw Foundation | Self-hosted personal AI assistant harness — state, memory, and credentials live on your hardware; Gateway control plane manages sessions/connections across 20+ messaging channels (WhatsApp, Telegram, Slack, Discord, iMessage…); model-agnostic (Claude, Codex, local models via Ollama/OpenAI-compatible APIs), extensible via plugins/tools/skills; created by Peter Steinberger, now stewarded by the OpenClaw Foundation (501(c)(3)) with AWS/OpenAI/Red Hat backing (MIT, 390k+ stars, breakout project of 2026) ![](https://img.shields.io/github/stars/openclaw/openclaw?style=flat-square) |
 | [**GitHub Agentic Workflows (gh-aw)**](https://github.com/github/gh-aw) | GitHub | Security-first agentic workflows for GitHub Actions — Markdown workflow specs, sandboxed execution, structured outputs, approval-aware automation (2026) ![](https://img.shields.io/github/stars/github/gh-aw?style=flat-square) |
 | [**Google ADK**](https://google.github.io/adk-docs/) | Google | Gemini-native development (Apr 2025) |
 | [**Claude Code**](https://docs.anthropic.com/en/docs/claude-code) | Anthropic | Agentic coding with Agent Teams (Feb 2026) |
 | [**karpathy/autoresearch**](https://github.com/karpathy/autoresearch) | Karpathy | 630-line self-improving agent — reads its own training code, forms hypotheses, runs experiments overnight (Mar 2026) ![](https://img.shields.io/github/stars/karpathy/autoresearch?style=flat-square) |
 | [**Microsoft Agent Framework**](https://github.com/microsoft/agent-framework) | Microsoft | Unified successor to AutoGen + Semantic Kernel — event-driven actor model, multi-agent orchestration (RC 2026) ![](https://img.shields.io/github/stars/microsoft/agent-framework?style=flat-square) |
 | [**openai/codex**](https://github.com/openai/codex) | OpenAI | Lightweight agentic coding CLI — o3/o4-mini powered, runs in terminal (Apr 2025, active 2026) ![](https://img.shields.io/github/stars/openai/codex?style=flat-square) |
+| [**OpenHands**](https://github.com/OpenHands/OpenHands) | All Hands AI | Open-source autonomous SWE agent (formerly OpenDevin) — sandboxed code execution, multi-step planning, 73.8% on SWE-bench Verified; June 2026 "Agent Canvas" relaunch as a self-hosted control center that can also drive Claude Code, Codex CLI, and Gemini CLI via the Agent Client Protocol (ACP); 9M+ downloads, 500+ contributors (MIT, 90k+ stars, actively maintained Oct 2026) ![](https://img.shields.io/github/stars/OpenHands/OpenHands?style=flat-square) |
 | [**DeerFlow 2.0**](https://github.com/bytedance/deer-flow) | ByteDance | Long-horizon "SuperAgent" — filesystem, sandboxed execution, persistent memory, parallel sub-agents, skill system; LangGraph-based; hit #1 GitHub Trending on launch day (Feb 28, 2026) ![](https://img.shields.io/github/stars/bytedance/deer-flow?style=flat-square) |
 | [**PilotDeck**](https://github.com/OpenBMB/PilotDeck) | OpenBMB / THUNLP / ModelBest / AI9Stars | WorkSpace-isolated agent OS — white-box memory, smart model routing (~70% cost savings), always-on background execution, MCP-native; productivity platform for multi-project agent workflows (May 2026) ![](https://img.shields.io/github/stars/OpenBMB/PilotDeck?style=flat-square) |
 | [**AOS CE**](https://github.com/unicity-aos/aos-ce) | Unicity | Open agent operating system — capsules, Astrid Runtime, Forge workbench, meta-harness loops, MCP bridge; composable user-space layer for harnesses and agent-native software (July 2026) ![](https://img.shields.io/github/stars/unicity-aos/aos-ce?style=flat-square) |
@@ -760,6 +985,7 @@ Context engineering is the practice of designing *what* goes into an LLM's conte
 | [**codebase-memory-mcp**](https://github.com/DeusData/codebase-memory-mcp) | DeusData | High-performance code-intelligence MCP server — tree-sitter + Hybrid LSP knowledge graph, 15 MCP tools, indexes Linux kernel in 3 min, 120× fewer tokens than file-by-file exploration (Feb 2026) ![](https://img.shields.io/github/stars/DeusData/codebase-memory-mcp?style=flat-square) |
 | [**TencentDB Agent Memory**](https://github.com/TencentCloud/TencentDB-Agent-Memory) | Tencent Cloud | Team-level memory hub for AI agents — turns conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks (Apr 2026) ![](https://img.shields.io/github/stars/TencentCloud/TencentDB-Agent-Memory?style=flat-square) |
 | [**agentmemory**](https://github.com/rohitg00/agentmemory) | rohitg00 | Persistent memory for AI coding agents — confidence-scored facts/procedures/sessions, hybrid dense+keyword+graph retrieval, 54 MCP tools, 12 auto hooks, 95.2% R@5, 92% fewer tokens; supports Claude Code, Cursor, Codex, Gemini CLI, Hermes, OpenClaw, pi, OpenCode, and any MCP client (Feb 2026) ![](https://img.shields.io/github/stars/rohitg00/agentmemory?style=flat-square) |
+| [**deja-vu**](https://github.com/vshulcz/deja-vu) | vshulcz | Cross-agent coding session memory & compaction recovery — indexes existing transcripts across 44 coding agents (Claude Code, Codex, Cursor, Gemini CLI, OpenCode, Windsurf, Cline, Hermes, OpenClaw) on disk into a shared local BM25 index; 1 MCP tool (8 modes), auto-recall hooks, 97.2% R@5 on LongMemEval-S, 58% fewer tokens on repeat tasks, zero embeddings or API keys, single Go binary (MIT, 2026) ![](https://img.shields.io/github/stars/vshulcz/deja-vu?style=flat-square) |
 | [**eve**](https://github.com/vercel/eve) | Vercel | Filesystem-first framework for durable backend AI agents — instructions, tools, skills, channels, schedules, connections, and subagents as files; path-named capabilities, typed tools, `eve eval` harness (June 2026) ![](https://img.shields.io/github/stars/vercel/eve?style=flat-square) |
 | [**Mastra**](https://github.com/mastra-ai/mastra) | Gatsby team | TypeScript-first AI agent framework — Agent/Workflow/RAG/Evals primitives, 40+ model providers, native MCP server support (YC W25, 2026) ![](https://img.shields.io/github/stars/mastra-ai/mastra?style=flat-square) |
 | [**PraisonAI**](https://github.com/MervinPraison/PraisonAI) | Mervin Praison | Production-ready multi-agent framework — 100+ LLM providers, MCP integration, memory/RAG/guardrails, 24/7 delivery to Telegram/Discord/WhatsApp, fastest agent instantiation (2026) ![](https://img.shields.io/github/stars/MervinPraison/PraisonAI?style=flat-square) |
@@ -782,6 +1008,7 @@ Context engineering is the practice of designing *what* goes into an LLM's conte
 | [**Reef**](https://github.com/Human-Agent-Society/reef) | Human-Agent Society | Continual-learning infra for self-improving agents — connects agent inference, feedback, learning, and versioned delivery in one serve → observe → grow → commit loop; either train model weights (Slime/SGLang integration) or evolve the harness itself (prompts, rules, skills) with no local training GPUs; versioned artifact history with candidate evaluation and selection policies (Python, Apache-2.0, 2.8k+ stars, Aug 2026, actively maintained) ![](https://img.shields.io/github/stars/Human-Agent-Society/reef?style=flat-square) |
 | [**Dormice**](https://github.com/BitMiracle-AI/Dormice) | BitMiracle AI | "The SQLite of agent sandboxes" — self-hosted, E2B-compatible sandbox platform for AI agents. Inverts cloud sandbox economics: one daemon + one SQLite ledger on a machine you already pay for, and sandboxes are permanent — they cool down an idle ladder (`active → frozen → stopped → archived`) so idle costs nothing (~5 MiB resident frozen, ~50 ms wake, files intact). `acquireSandbox(key)` is the entire mental model (idempotent create/wake/restore). Docker + gVisor-isolated execution, one-binary deploy (no K8s), multi-node fleet mode, signed file URLs, real PTY streaming — and the official `e2b` SDK works unmodified by changing two URLs; ships an Agent Skill so coding agents can drive it directly (TypeScript, Apache-2.0, 1.2k+ stars, July 2026, early development, actively maintained) ![](https://img.shields.io/github/stars/BitMiracle-AI/Dormice?style=flat-square) |
 | [**OpenConnector**](https://github.com/oomol-lab/open-connector) | Oomol | Open-source connector gateway for AI agents — an alternative to Pipedream/Composio. Connect user app accounts once, then expose 1,000+ providers / 10,000+ prebuilt Actions through SDK, CLI, MCP, HTTP, and OpenAPI from one inspectable runtime. Credential handling for API keys, OAuth2, and custom credentials; scoped runtime tokens, action allow/block policies, redacted run logs — provider credentials never enter the agent process. Self-host with Docker/Node.js (SQLite or Postgres) or use the hosted runtime (TypeScript, Apache-2.0, 5.8k+ stars, June 2026, actively maintained) ![](https://img.shields.io/github/stars/oomol-lab/open-connector?style=flat-square) |
+| [**TradingAgents**](https://github.com/TauricResearch/TradingAgents) | Tauric Research | Multi-agent LLM trading firm — LangGraph-based roles mirror a real desk: fundamental / sentiment / technical analysts, bull-vs-bear debate researchers, risk-management team, and a trader who synthesizes and executes; point-in-time data discipline (SEC EDGAR as-filed, no look-ahead bias), tiered model routing (quick models gather data, deep models debate), 17+ LLM providers incl. local via Ollama, portfolio-aware runs with checkpoint resume and a decision memory log, multi-market (US/HK/Tokyo/London/India/A-shares/crypto); the canonical open-source study in multi-agent debate-and-reflection design — and the most-starred finance-domain agent framework (paper arXiv 2412.20138, UCLA/MIT; Python, Apache-2.0, 111k+ stars, v0.7.0 Oct 2026, actively maintained) ![](https://img.shields.io/github/stars/TauricResearch/TradingAgents?style=flat-square) |
 
 > **Feb 2026 multi-agent wave:** In a two-week window, Claude Code Agent Teams, Windsurf parallel agents (5), Grok Build (8 agents), Codex CLI, and Devin parallel sessions all shipped simultaneously — multi-agent is now the baseline, not a feature.
 
@@ -791,6 +1018,9 @@ Open protocol (Anthropic, Nov 2024) for connecting LLMs to tools and data. Now a
 
 - Spec: [modelcontextprotocol.io](https://modelcontextprotocol.io/specification/2025-11-25)
 - Official servers: [github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
+- GitHub: [PrefectHQ/fastmcp](https://github.com/PrefectHQ/fastmcp) — **FastMCP** (Prefect) — the de-facto Python framework for *building* MCP servers and clients — decorator-based `@mcp.tool` API, server composition (mount + proxy), OpenAPI import/export, OAuth 2.1, OpenTelemetry, hot reload, MCP Apps (interactive UI in tool responses), background tasks, and a built-in test client; tracks the current spec revision (2026-07-28) on MCP SDK 2.x; from Jeremiah Lowin, the original author of the reference Python MCP SDK (Apache-2.0, ~28k stars, v4.1 Oct 2026, actively maintained) ![](https://img.shields.io/github/stars/PrefectHQ/fastmcp?style=flat-square)
+- Registry: [modelcontextprotocol/registry](https://github.com/modelcontextprotocol/registry) ![](https://img.shields.io/github/stars/modelcontextprotocol/registry?style=flat-square) — the official discovery layer (powers registry.modelcontextprotocol.io): ~10,000 server records by mid-2026, reverse-DNS-verified namespaces (`io.github.user/server`), REST API for programmatic in-agent tool discovery, and self-hostable for private enterprise catalogs (Go, MIT, preview Sept 2025 → matured through 2026, actively maintained)
+- GitHub: [upstash/context7](https://github.com/upstash/context7) — **Context7** (Upstash) — the de-facto *capability* MCP server for coding agents: injects current, version-specific library documentation and code examples into the context window, ending hallucinated APIs and year-old code from stale training data — `resolve-library-id` + `query-docs` tools over a continuously crawled, version-pinned doc index (ask for "Next.js 16" and get Next.js 16 docs); use it as a hosted remote MCP endpoint (`https://mcp.context7.com/mcp`, zero install) or self-host the server, and newer setups install the `ctx7` CLI + agent skill via `npx ctx7 setup` (no MCP required); native support for Claude Code, Cursor, VS Code, ChatGPT, Gemini, and pi.dev, with config recipes for 30+ clients (TypeScript, MIT, 64k+ stars, v4.5 line Nov 2026, pushed daily, actively maintained) ![](https://img.shields.io/github/stars/upstash/context7?style=flat-square)
 
 ### A2A — Agent-to-Agent Protocol
 
@@ -800,6 +1030,25 @@ Open protocol (Google, Apr 2025 → Linux Foundation, Mar 2026) for cross-framew
 - Docs: [google.github.io/adk-docs/a2a/](https://google.github.io/adk-docs/a2a/)
 
 **MCP vs A2A in one line:** MCP = agent ↔ tool. A2A = agent ↔ agent.
+
+### Agentic Payments
+
+The missing layer of the agent stack: protocols that let agents *pay* for tools, data, and services. The 2026 landscape split into complementary layers — **x402** (Coinbase, Apr 2025 → Linux Foundation, Apr 2026) is the HTTP-native settlement rail (a 402-status-code payment challenge settles in stablecoins, no API keys or accounts), **AP2** (Google, Sept 2025 → FIDO Alliance, Apr 2026) provides cryptographically signed *mandates* — proof a human authorized the spend — and **UCP** (Google + Shopify, Jan 2026) standardizes the merchant side: how agents discover products, negotiate capabilities, check out, and handle post-purchase across retailer platforms. Other entries: ACP (OpenAI + Stripe, live in ChatGPT Instant Checkout) and MPP (Stripe + Tempo, Mar 2026). By mid-2026 x402 had passed 165M transactions / $43.5M settled, with AWS Bedrock AgentCore, Cloudflare, Stripe, Visa, and Mastercard in the ecosystem.
+
+- GitHub: [x402-foundation/x402](https://github.com/x402-foundation/x402) — reference implementation + SDKs (TypeScript/Python/Go); Apache-2.0 ![](https://img.shields.io/github/stars/x402-foundation/x402?style=flat-square)
+- GitHub: [google-agentic-commerce/AP2](https://github.com/google-agentic-commerce/AP2) — Google's Agent Payments Protocol (Sept 2025 launch, 60+ payment-network partners) — cryptographically signed *mandates* (SD-JWT / ECDSA) proving a human authorized a spend; donated to the FIDO Alliance (Apr 28, 2026), whose Payments WG now builds on AP2; v0.2 reorganized the mandate model into Checkout + Payment Mandates with Open (pre-authorized constraints) / Closed (finalized) states and added "Human Not Present" autonomous payments; Python SDK (Pydantic) + reference scenarios in Python/Go/Kotlin and a sample Android app (Apache-2.0, 3.2k+ stars, active 2026) ![](https://img.shields.io/github/stars/google-agentic-commerce/AP2?style=flat-square)
+- GitHub: [Universal-Commerce-Protocol/ucp](https://github.com/Universal-Commerce-Protocol/ucp) — Universal Commerce Protocol (Google + Shopify, announced at NRF Jan 11, 2026) — the open *commerce* layer atop the payment rails: merchants host a signed, versioned capability profile at a well-known discovery URL (`/.well-known/ucp`, transport-agnostic across REST and MCP), and agents run four standardized stages — product discovery, capability negotiation, checkout, post-purchase — with composable primitives for Checkout (carts, tax sessions), Identity Linking (OAuth 2.0), Order lifecycle webhooks, and Payment Token Exchange between PSPs; official machine-readable JSON schemas, Python SDK (Pydantic, auto-generated from schemas), and a conformance suite, spec versioned by date (current `2026-08-25`); Shopify enabled UCP by default for all merchants with Shop Pay tokenized checkout (June 2026), with Etsy, Target, Walmart, Wayfair, Best Buy and Visa/Mastercard/Amex/Stripe/Adyen/PayPal in the ecosystem; powers agentic checkout in Google AI Mode, Gemini apps, and Microsoft Copilot (Apache-2.0, 3.4k+ stars, actively maintained 2026) ![](https://img.shields.io/github/stars/Universal-Commerce-Protocol/ucp?style=flat-square)
+- Curated ecosystem map: [bitrefill/awesome-agentic-payments](https://github.com/bitrefill/awesome-agentic-payments) — protocols, specs, SDKs, and tools for the agentic commerce stack (2026)
+
+**In one line:** MCP = agent ↔ tool. A2A = agent ↔ agent. x402/AP2 = agent ↔ merchant (pay & authorize). UCP = agent ↔ merchant (shop & check out).
+
+### Agent Identity
+
+If agents can act and pay across organizations, every counterparty first needs to answer: *who is this agent, and who vouches for it?* 2026 turned that into its own standards layer — SPIFFE/SPIRE (CNCF) for in-cluster workload attestation, an [IETF Agent Identity Protocol draft](https://datatracker.ietf.org/doc/draft-aip-agent-identity-protocol/) (Mar 2026) defining an agent-identity layer that proxies can verify independently of OAuth/OIDC, an [IETF OAuth-WG draft bridging SPIFFE credentials into OAuth client authentication](https://github.com/oauth-wg/oauth-spiffe-client-authentication) (closes the vocab gap between the SPIFFE and OAuth worlds), and Microsoft's Agent Governance Toolkit (above) shipping zero-trust agent identity (Ed25519 + SPIFFE) as code.
+
+- GitHub: [agntcy/identity](https://github.com/agntcy/identity) — AGNTCY Identity (the identity workstream of Cisco-donated [AGNTCY](https://www.linuxfoundation.org/press/linux-foundation-welcomes-the-agntcy-project-to-standardize-open-multi-agent-system-infrastructure-and-break-down-ai-agent-silos), a Linux Foundation project backed by 75+ companies) — onboard, create, and verify identities for agents, MCP servers, and multi-agent systems on **W3C DIDs + Verifiable Credentials 2.0**; each agent gets a resolvable ID and *Agent Badges* (signed VCs binding the agent to its OASF schema definition or A2A Agent Card — capabilities are attested, not claimed), multiple badges enable task-scoped least privilege, bring-your-own-identity via Identity Providers (Okta) or A2A cards, Vault-backed signing keys, identity node + CLI tooling; 44 of 48 AGNTCY repos pushed in 2026 (Go, Apache-2.0, actively maintained) ![](https://img.shields.io/github/stars/agntcy/identity?style=flat-square)
+
+**In one line:** MCP = agent ↔ tool. A2A = agent ↔ agent. x402/AP2 = agent ↔ merchant. Agent identity = *proof of which agent*.
 
 ### Agent Skills
 
@@ -812,7 +1061,10 @@ An open standard (Anthropic, Dec 2025) for packaging expertise into portable dir
 | Resource | Notes |
 |----------|-------|
 | [anthropics/skills](https://github.com/anthropics/skills) | Official collection + spec (`/spec/agent-skills-spec.md`) ![](https://img.shields.io/github/stars/anthropics/skills?style=flat-square) |
+| [**obra/superpowers**](https://github.com/obra/superpowers) | Jesse Vincent's complete software-development methodology for coding agents, built on composable auto-triggering Agent Skills — spec elicitation, chunked design sign-off, implementation planning, true red/green TDD, and subagent-driven development; agents can work autonomously for hours without deviating from the approved plan; works with Claude Code, Codex, Cursor, Gemini CLI, OpenCode, Pi, and 10+ harnesses (MIT, 296k+ stars, actively maintained Oct 2026) ![](https://img.shields.io/github/stars/obra/superpowers?style=flat-square) |
+| [**mattpocock/skills**](https://github.com/mattpocock/skills) | Matt Pocock's (Total TypeScript / AI Hero) "Skills for Real Engineers" — the most-starred community Agent Skills collection, straight from his `.agents` directory: small, composable, model-agnostic skills as an explicit counterpoint to heavyweight process frameworks (GSD/BMAD/Spec-Kit) that own the loop and take control away; ~20 engineering skills (tdd, code-review, diagnosing-bugs, domain-modeling, to-spec, implement-spec, pr, retro, wayfinder…); installs as a self-updating plugin on Claude Code, Codex, GitHub Copilot (CLI + VS Code), and Gemini CLI, or copies editable files into a project via skills.sh (MIT, 313k+ stars, created Feb 2026, v1.3.2 Oct 2026, pushed daily, actively maintained Nov 2026) ![](https://img.shields.io/github/stars/mattpocock/skills?style=flat-square) |
 | [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) | 1000+ community skills, works across all major platforms |
+| [**MetcalfSolutions/Satori**](https://github.com/MetcalfSolutions/Satori) | Reflective dialogue prompt and wisdom companion skill, built to be outgrown: single-lens introspection, SQLite memory vault, and trigger discipline that stays silent during pure coding work ![](https://img.shields.io/github/stars/MetcalfSolutions/Satori?style=flat-square) |
 | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | Vercel's official skills |
 | [Agent Skills Docs — Anthropic](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) | Official docs & spec |
 | [Equipping Agents for the Real World — Anthropic](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) | Announcement post |
@@ -841,13 +1093,56 @@ The infrastructure layer that wraps an LLM: tool access, lifecycle management, p
 | [Effective Harnesses for Long-Running Agents — Anthropic](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) | Long-running agent design |
 | [SethGammon/Citadel](https://github.com/SethGammon/Citadel) | Production harness: 4-tier routing, parallel worktrees, lifecycle hooks, 6 skills |
 | [langchain-ai/deepagents](https://github.com/langchain-ai/deepagents) | LangChain's opinionated deep agent harness (used in TerminalBench) |
+| [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | Multi-harness coding-agent project for OpenCode and Codex CLI, with lifecycle hooks, skills/MCP integration, context tooling, and opt-in team execution in its OpenCode edition |
 | [strukto-ai/mirage](https://github.com/strukto-ai/mirage) ![](https://img.shields.io/github/stars/strukto-ai/mirage?style=flat-square) | Unified virtual filesystem for AI agents — mounts S3, GDrive, Slack, Gmail, Redis as one tree; agents use bash across every backend; Python/TypeScript SDKs, cache, snapshots (May 2026) |
 | [Building a C Compiler with Parallel Claudes — Anthropic](https://www.anthropic.com/engineering/building-c-compiler) (Feb 2026) | How Anthropic used parallel Claude sub-agents to build a C compiler — generator/evaluator harness patterns |
 | [QoderAI/better-harness](https://github.com/QoderAI/better-harness) ![](https://img.shields.io/github/stars/QoderAI/better-harness?style=flat-square) | Open-source loop/harness improvement skill — turns project and session evidence into prioritized improvements and verifiable next steps for Claude Code, Codex, Cursor, and other coding agents (July 2026) |
 | [**harness-engineering**](https://github.com/lopopolo/harness-engineering) ![](https://img.shields.io/github/stars/lopopolo/harness-engineering?style=flat-square) | Ryan Lopopolo's anthology, field guide, and agent context bundle for harness engineering — shaping context and tools so agents can recover intent, operate systems, respect authority, prove outcomes, and leave the next run better equipped (CC-BY-4.0, July 2026) |
 | [**loop-engineering**](https://github.com/cobusgreyling/loop-engineering) ![](https://img.shields.io/github/stars/cobusgreyling/loop-engineering?style=flat-square) | "Stop prompting. Design the loop." — practical patterns, starters & CLI (`loop-audit`, `loop-init`, `loop-cost`) for systems that discover work, hand it to agents, verify results, and persist state across Claude Code, Codex, Grok, and OpenCode; report-only week one, scores loops on a "Loop Ready" rubric (MIT, 11k+ stars, June 2026, actively maintained) |
 | [**ECC**](https://github.com/affaan-m/ECC) ![](https://img.shields.io/github/stars/affaan-m/ECC?style=flat-square) | The agent harness performance optimization system — skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond (MIT, 242k+ stars, Jan 2026) |
+| [**Orca**](https://github.com/stablyai/orca) | ![](https://img.shields.io/github/stars/stablyai/orca?style=flat-square) | Open-source ADE (Agent Development Environment) for orchestrating fleets of parallel coding agents — run Claude Code, Codex, OpenCode, or Pi side-by-side, each in its own isolated git worktree; fan one prompt across five agents and merge the winner, centralized monitoring, terminal splits, and a mobile companion to steer agents from your phone (TypeScript/Electron, MIT, 85k+ stars, actively maintained Oct 2026) |
 | [**SoL-Pi**](https://github.com/NVlabs/SoL-Pi) ![](https://img.shields.io/github/stars/NVlabs/SoL-Pi?style=flat-square) | NVIDIA's efficiency extension for the Pi coding agent — four opt-in harness mechanisms distilled from scaled auto-research loops ([arXiv 2609.20519](https://arxiv.org/abs/2609.20519)): Action Fusion (run follow-up validation in the same tool call), ObservationPack (stable handles with exact paged recall for repeated large outputs), evidence-preserving reducer (long logs → compact receipts where every quotation is verifiable against the archive), and online context compaction gated by economics/window pressure; no patches to Pi, evidence always preserved (TypeScript, MIT, 2.9k+ stars, Sept 2026, actively maintained) |
+
+### Sandboxed Execution
+
+Agents that write and run code need an isolation layer — untrusted model output must never execute on the host. Sandboxed execution is the harness component that makes autonomous loops survivable (see Anthropic's containment post above for the production rationale).
+
+| Project | Stars | What it does |
+|---------|-------|-------------|
+| [**E2B**](https://github.com/e2b-dev/E2B) | ![](https://img.shields.io/github/stars/e2b-dev/E2B?style=flat-square) | Open-source sandboxed code execution for AI agents — Firecracker microVMs with dedicated kernels per sandbox (~150 ms cold start), fork/snapshot primitives (pause/resume with full memory state), Python/JS SDKs + MCP server, self-hostable via Terraform on AWS/GCP; used by Perplexity, Hugging Face, Manus, and Groq (Apache-2.0, 14k+ stars, actively maintained 2026) |
+| [**microsandbox**](https://github.com/superradcompany/microsandbox) | ![](https://img.shields.io/github/stars/superradcompany/microsandbox?style=flat-square) | Local-first, programmable microVM runtime for untrusted agent workloads — libkrun microVMs with sub-100 ms boots, OCI-compatible images, fork/snapshot live sandboxes, detached long-lived sessions, fine-grained outbound network allowlists, and "unexploitable" secrets that never enter the VM; ships an MCP server + Agent Skills so agents create their own sandboxes; Rust/Python/TS/Go SDKs, runs on Linux (KVM), macOS (Apple Silicon), and Windows (WHP); YC-backed (Apache-2.0, 8.6k+ stars, actively maintained 2026) |
+| [**OpenShell**](https://github.com/NVIDIA/OpenShell) | ![](https://img.shields.io/github/stars/NVIDIA/OpenShell?style=flat-square) | NVIDIA's security-first runtime for autonomous agents — kernel-level sandboxed execution with policy-based governance over file access, syscalls, and every network connection; credential proxying (agents never see real secrets — injected only at approved endpoints), and formal verification of policy changes before they are applied; Rust core with Python/TypeScript/Go/Rust SDKs, Linux/macOS/Windows-WSL2 (Apache-2.0, 15k+ stars, actively maintained Oct 2026) |
+
+### Agent Training (RL Post-Training)
+
+A harness makes an agent *work*; RL post-training makes it *capable*. The 2026 recipe — on-policy RL with verifiable rewards over multi-turn, tool-using trajectories (SWE-bench, τ²-bench, BrowseComp) — runs on a small set of open training frameworks. Runtime entries above (Reef, SoL-Pi) name-drop veRL/AReaL (Reef also Slime/SGLang) as their training complement; this is that missing layer.
+
+| Project | Stars | What it does |
+|---------|-------|-------------|
+| [**verl**](https://github.com/volcengine/verl) | ![](https://img.shields.io/github/stars/volcengine/verl?style=flat-square) | The most widely adopted open-source RL post-training framework for LLMs (ByteDance Seed; HybridFlow architecture, [EuroSys 2025](https://arxiv.org/abs/2409.19256)) — a flexible single-controller/dataflow abstraction that hybrid-orchestrates rollout generation (vLLM/SGLang) and training (FSDP/Megatron) in one program; PPO / GRPO / GSPO / DAPO / DrGRPO / REINFORCE++ / PRIME and more, with first-class multi-turn tool-calling and agentic RL (async rollout-server separation), plus the **verl-agent** extension (GiGPO) for long-horizon agent training and community stacks like OpenManus-RL (Apache-2.0, 23.9k+ stars, actively maintained 2026) |
+| [**AReaL**](https://github.com/inclusionAI/AReaL) | ![](https://img.shields.io/github/stars/inclusionAI/AReaL?style=flat-square) | Fully asynchronous RL system for LLM reasoning and agents (inclusionAI / Ant Group + Tsinghua IIIS; [NeurIPS 2025](https://arxiv.org/abs/2509.02547)) — decouples rollout generation from training with staleness-aware PPO, reporting 2.77× speedup over synchronous systems at equal GPU count and near-linear scaling to 512 GPUs; GRPO / PPO / DAPO / GSPO / Dr.GRPO / REINFORCE++ / RLOO / LitePPO and more in both async and sync modes, training via Megatron / FSDP / Archon with vLLM/SGLang inference; **v1.0** (Mar 2026) added one-click agent integration — point any OpenAI-compatible agent (OpenAI Agents SDK, CAMEL-AI, OpenClaw) at AReaL by changing only `base_url` + `api_key` — and **v2.0** (July 2026) refactored to microservices (independent training/inference/agent/weight-update services) with the Hermes online RL loop and end-to-end SWE-bench training examples; community stacks incl. CAMEL-AI's SETA terminal-agent trainer and EigenData's 235B MoE trained past GPT-5 on τ²-bench (Python, Apache-2.0, 5.9k+ stars, weekly releases, actively maintained Oct 2026) |
+| [**OpenRLHF**](https://github.com/OpenRLHF/OpenRLHF) | ![](https://img.shields.io/github/stars/OpenRLHF/OpenRLHF?style=flat-square) | The Ray+vLLM pioneer of open RLHF/RL post-training — the first framework built around a fully decoupled Ray-based distributed architecture (vLLM generation + DeepSpeed ZeRO/FSDP training, placement-colocated hybrid engine with sleep-mode weight sharing between actor/critic/reward/reference); PPO / GRPO / DAPO / REINFORCE++ / RLOO / KTO / Iterative-DPO / rejection sampling / LoRA-RL, all behind a token-in-token-out agentic pipeline that decouples environment interaction from the RL algorithm; **v0.10** (Apr 2026) added end-to-end **VLM RLHF** and multi-turn VLM RL (image observations + environment feedback, e.g. agent screenshots), and **Sept 2026** added **FlashREINFORCE** — critic-free, single-rollout asynchronous RL for agentic LMs with rollout-training overlap via vLLM pause/resume; the pragmatic default with the broadest algorithm coverage — ProRL V2 (1.5B reasoning SOTA), ScaleRL, and LMM-R1 all trained on it, and it is one of the seven frameworks reviewed in the Oct 2026 arXiv 2610.28027 study alongside verl/AReaL/TRL/NeMo-RL (Python, Apache-2.0, 10.1k+ stars, actively maintained Oct 2026) |
+| [**TRL**](https://github.com/huggingface/trl) | ![](https://img.shields.io/github/stars/huggingface/trl?style=flat-square) | Hugging Face's post-training library — the reference implementation of GRPO (the algorithm DeepSeek popularized) and the most-used single-GPU-to-cluster starting point for RL post-training; 75+ trainers across SFT / DPO / KTO / PPO / ORPO / CPO and more, with vLLM generation, PEFT/LoRA, and AMD ROCm / AWS Trainium support; **v1.11** (Aug 2026) graduated `DistillationTrainer` and shipped **loop-owning (black-box) AsyncGRPO for agentic training** — external agents (e.g. opencode) run their own tool loops inside an OpenEnv session while a transparent proxy captures per-turn token IDs and logprobs, letting TRL rebuild per-turn training rows and reinforce only the turns you choose; **v1.14–v1.15** (Oct 2026) added 1M-token-context training, Nemotron 3.5 Lightning support, and fused-LM-head optimizations (up to 6.9× longer sequences, ~57% GRPO peak-memory cut); the "most correct" default in fine-tuning shootouts (Axolotl/Unsloth/TRL, 2026) — frequently paired with Unsloth for speed (Python, Apache-2.0, 19.6k+ stars, actively maintained Oct 2026) |
+| [**Slime**](https://github.com/THUDM/Slime) | ![](https://img.shields.io/github/stars/THUDM/Slime?style=flat-square) | Zhipu AI / Tsinghua's (THUDM) RL scaling framework — the production trainer behind the GLM series from GLM-4.5 to GLM-5.3-Flash; connects **Megatron** training with **SGLang** rollout through a unified train–rollout–buffer architecture (parameters sync, router-based generation, prompt/verifier management) via three argument surfaces (Megatron direct, `--sglang-` prefixed, Slime-specific); supports GRPO / PPO / GSPO / DAPO and beyond, MoE RL, multimodal and multi-turn agentic training, with day-0 recipes for Qwen3 (incl. MoE / Qwen3-Next), DeepSeek V3/V3.1/R1, and Llama 3; 2026 additions include coding-agent RL examples, multi-agent RL, and fully-async rollout for long-tail generation — plus a notable ecosystem: **Dressage** (agentic RL for blackbox agents), **Miles** (enterprise RL with LoRA + low-precision training), **vime** (vLLM-native backend), **Relax** (omni-modal agentic training), **P1** (physics-olympiad reasoning), and **TritonForge** (GPU-kernel-generation agents) (Python, Apache-2.0, 8.7k+ stars, actively maintained Oct 2026) |
+| [**NeMo RL**](https://github.com/NVIDIA-NeMo/RL) | ![](https://img.shields.io/github/stars/NVIDIA-NeMo/RL?style=flat-square) | NVIDIA's scalable RL post-training library (successor to NeMo Aligner, re-architected with the NeMo Framework) — the megatron-core-backed option in the open stack: GRPO / GSPO / DAPO / PPO / DPO / SFT(+LoRA) / on-policy distillation / GDPO with training via PyTorch DTensor (FSDP2) or Megatron Core 6D parallelism and rollout via vLLM / SGLang / Megatron-native inference, orchestrated by Ray with worker isolation; async RL decoupling rollout from training, multi-turn RL, FP8, sequence packing, masked-importance-sampling GRPO for train/rollout policy mismatch, and first-class VLM post-training (plus the companion **NeMo Gym** environment hub); **v0.5** (Jan 2026) added NeMo-Gym multi-environment RL + LoRA for GRPO/DPO/SFT, **v0.6** (Apr 2026) added the SGLang backend, Muon optimizer, and EAGLE-3 speculative decoding (1.8× faster rollouts, 1.41× faster RL steps at 8B scale), **v0.7** (July 2026) added PPO / MOPD / CISPO + cross-tokenizer distillation, and Oct 2026 brought day-0 support for DeepSeek V4.1 Flash, MiniMax-M3.1-Flash, and Nemotron 3.5 Super VL — it is the framework that post-trained NVIDIA's Nemotron-3 family (Python, Apache-2.0, 2.1k+ stars, 1,700+ commits, actively maintained Oct 2026) |
+| [**SkyRL**](https://github.com/NovaSky-AI/SkyRL) | ![](https://img.shields.io/github/stars/NovaSky-AI/SkyRL?style=flat-square) | UC Berkeley Sky Computing Lab's (NovaSky AI, with Anyscale) full-stack RL library for LLMs and agents — a modular four-package stack: **skyrl-train** (Ray-orchestrated trainer over FSDP2/Megatron with vLLM/OpenAI-compatible rollouts, colocated or disaggregated, sync or async), **skyrl-agent** (multi-turn, tool-using long-horizon agent training — the [SkyRL-Agent paper](https://arxiv.org/abs/2511.16108) takes SA-SWE-32B from 24.4% → 39.4% Pass@1 on SWE-bench Verified), **skyrl-gym** (Gymnasium-standard RL environments for math, coding, search, and SQL — SkyRL-SQL beats GPT-4o/o4-mini on Spider by up to 9.2% via multi-turn RL), and **skyrl-tx** (a Tinker-API/JAX training backend); **v0.3.0** (July 2026) consolidated the stack under a unified `skyrl` library, and Oct 2026 brought day-0 support for Reflection AI's Beam 501B-A23B MoE; production users incl. Mercor (Qwen Pass@1 16.1% → 27.3% on APEX-Agents via SkyRL) and teams at Stanford, CMU, Microsoft AI, and Datadog — the modular, environment-first counterpart to verl/Slime in the Oct 2026 framework comparisons (Python, Apache-2.0, 2.5k+ stars, actively maintained Oct 2026) |
+| [**prime-rl**](https://github.com/PrimeIntellect-ai/prime-rl) | ![](https://img.shields.io/github/stars/PrimeIntellect-ai/prime-rl?style=flat-square) | Prime Intellect's fully asynchronous RL framework — "agentic RL training at scale" (the [INTELLECT-3 report](https://arxiv.org/abs/2512.16144)) — built to train 1T+ parameter MoE models on 1,000+ GPUs through three abstractions: a lightweight CPU **Orchestrator** (dataflow/scheduling), an **FSDP2 Trainer**, and **vLLM inference** as OpenAI-compatible servers; fully async off-policy training with disaggregated trainer/inference, continuous batching with in-flight weight updates for rollouts tens of thousands of tokens long, online data filtering, sequence-length scaling to 72k via activation offloading, a distributed Muon optimizer, FP8 inference with P/D disaggregation, and EP/CP parallelism; end-to-end post-training (SFT + RL + evals), multimodal VLM support (Qwen3.5), one-line Slurm deployment for frontier models, and native integration with the **verifiers** library and **Environments Hub**; **INTELLECT-3** (106B MoE, 12B active) was trained end-to-end on it across 512 H200s, **v0.6.0** (June 2026) added trillion-parameter MoE recipes (day-0 GLM-5.1, Kimi-K2.7-Code, Nemotron-3-Ultra-550B runs), **IPO** (INTELLECT Policy Optimization) became the default loss, and **v0.10.0** (Oct 13, 2026) brought major trainer performance work plus a unified eval CLI; from the team behind the $130M Series A / $1B valuation (July 2026) and the Lab managed post-training platform — completing the seven-framework lineup of the Oct 2026 arXiv 2610.28027 survey (listed there as ROLL, alongside verl/AReaL/TRL/OpenRLHF/NeMo-RL/Slime) (Python, Apache-2.0, 2.2k+ stars, actively maintained Oct 2026) |
+| [**Agent Lightning**](https://github.com/microsoft/agent-lightning) | ![](https://img.shields.io/github/stars/microsoft/agent-lightning?style=flat-square) | Microsoft Research's harnessed agentic RL trainer — [**v1.0**](https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/) (~3,500 LOC, [arXiv 2608.17528](https://arxiv.org/abs/2608.17528)) trains agents *inside their real production harnesses* instead of reimplementing them within the trainer: an OpenAI-compatible **API Gateway** proxy records prompts/responses/logprobs of any agent (LangGraph, OpenAI Agents SDK, AutoGen, Claude Agent SDK) as it runs, a **Rollout Controller** executes rollouts locally or as standard Kubernetes jobs (no commercial sandbox dependency), and a trainer built on **verl** + vLLM assembles per-turn training rows and updates the policy — with **collocated async RL** (rollout and training share GPUs, ~2× faster than synchronous RL while using fewer GPUs than conventional async) and **LightningRL** hierarchical RL for long-horizon credit assignment; results: Qwen3.5-9B 41.8% → 56.4% Pass@1 on SWE-bench Verified with ~6K training samples, Qwen3.5-35B-A3B MoE 47.8% → 61.6% with ~1.8K; the "harnessed agentic RL" paradigm it introduced is now adopted across the stack (verl Uni-Agent, AReaL 2.0, Slime, Polar) — the original [Agent Lightning paper](https://arxiv.org/abs/2508.03680) (Aug 2025) pioneered RL-training existing agents with zero code rewrites via an LLM proxy (Python, MIT, 18.8k+ stars, v1.0.2 Sept 2026, actively maintained Oct 2026) |
+
+### Agent Memory
+
+Production agents need memory that survives sessions — facts, preferences, and evolving relationships. The 2026 landscape splits into four camps: **flat fact stores** (vector + keyword retrieval of extracted facts; the most-deployed general-purpose one is Mem0, mem0ai/mem0, ~68k stars — but note its graph-memory and Dream features moved to the hosted platform in Sept 2026 — while the most-deployed coding-agent-specific one is claude-mem, thedotmack/claude-mem, 111k+ stars), **temporal knowledge graphs** that track *when* every fact was true and handle contradictions by invalidation rather than overwrite, **full stateful runtimes** where memory is the framework's core primitive and the agent itself pages context in and out via tool calls (the MemGPT/Letta lineage), and **memory operating systems** that give every agent one unified store/retrieve/manage layer over an inspectable memory graph, with composable knowledge-base "cubes" (MemOS). For the engineering camp, the graph and self-managed-memory approaches are where the long-term value is.
+
+| Project | Stars | What it does |
+|---------|-------|-------------|
+| [**mem0**](https://github.com/mem0ai/mem0) | ![](https://img.shields.io/github/stars/mem0ai/mem0?style=flat-square) | The most-deployed memory layer for AI agents — drop-in `add`/`search`/`update`/`delete` fact storage with LLM-extracted long-term / short-term / semantic memory: automatic fact consolidation (dedup, contradiction resolution, decay) so agents keep "context that persists" without context bloat; per-user/agent/session scoping, pluggable vector stores (Qdrant, Pinecone, PGVector, …) and graph-store backends for relation-aware recall; **92.5 on LOCOMO** (+21 points over the previous algorithm) per its [paper](https://arxiv.org/abs/2504.19413); the 2026 line is integration-first — dedicated SDKs/plugins for Claude Agent SDK, LangGraph, CrewAI, OpenAI Agents SDK, plus first-party packages for OpenCode, pi-agent, OpenClaw, and DeepSeek (Python **v2.2.1**, TypeScript **v3.3.1**, Sept 2026; note: graph memory and Dream features moved to the hosted platform Sept 2026) (Python/TS, Apache-2.0, 68k+ stars, actively maintained Oct 2026) |
+| [**claude-mem**](https://github.com/thedotmack/claude-mem) | ![](https://img.shields.io/github/stars/thedotmack/claude-mem?style=flat-square) | Automatic session-observation memory for coding agents (Alex Newman / thedotmack) — the most-starred entry in this table: lifecycle hooks capture everything an agent does during a session, an LLM **compression** pass distills raw tool activity into structured observations (decisions, bugfixes, security alerts), and session-start hooks inject the relevant compressed context back — context that persists without context bloat; local-first stack — SQLite + FTS5 keyword search + Chroma vector DB for hybrid semantic retrieval, with citations back to past observations (`search` / `timeline` MCP tools + a `mem-search` skill for progressive disclosure); works with Claude Code, OpenClaw, Codex, Gemini CLI, Hermes, Copilot, and OpenCode — a hosted observer (cmem.ai) is offered but the local observer is fully functional (`--provider host`, no account needed) (TypeScript/Bun, Apache-2.0, 111k+ stars, v15.9 line, pushed daily, actively maintained Nov 2026) |
+| [**Letta**](https://github.com/letta-ai/letta) → [letta-code](https://github.com/letta-ai/letta-code) | ![](https://img.shields.io/github/stars/letta-ai/letta?style=flat-square) | The MemGPT-lineage (arXiv 2310.08560, 1,000+ citations) stateful-agent platform — an OS-inspired memory hierarchy where the *agent itself* manages memory via tool calls: core memory (always in context, agent-editable — like RAM), recall (searchable history), and archival (long-term vector store). 2026 pivot: the V1 server was archived (Aug 2026) and the main repo now points to **letta-code**, a memory-first coding CLI that ranked #1 among model-agnostic open-source agents on Terminal-Bench; memory is git-backed Markdown files (MemFS) with sleep-time "dreaming" consolidation, and identity/skills ride along in the repo (original repo ~25k stars; letta-code Apache-2.0, TypeScript, 3.6k+ stars, pushed daily, actively maintained Oct 2026) |
+| [**Graphiti**](https://github.com/getzep/graphiti) | ![](https://img.shields.io/github/stars/getzep/graphiti?style=flat-square) | Zep's bi-temporal knowledge-graph memory for AI agents — every fact carries *valid time* (when it was true in the world) and *transaction time* (when the system learned it), enabling point-in-time queries ("what did the agent know as of T?"); incremental episode ingestion (messages/JSON/docs) with LLM-extracted entities and relationships, no batch recomputation; contradiction handling by edge invalidation (`t_invalid`) that preserves full provenance; hybrid retrieval (semantic + BM25 + graph traversal); Neo4j / FalkorDB / Amazon Neptune backends, MCP server for MCP-native deployments, ~110 releases; powers Zep's commercial platform and scales to sub-200 ms p95 retrieval (Python, Apache-2.0, ~31k stars, actively maintained Oct 2026) |
+| [**cognee**](https://github.com/topoteretes/cognee) | ![](https://img.shields.io/github/stars/topoteretes/cognee?style=flat-square) | Open-source AI memory platform (Topoteretes, Berlin) — the ECL (Extract–Cognify–Load) pipeline turns documents, code, and conversations into a property knowledge graph with vector embeddings on every node and edge, going beyond flat vector similarity; 4-call API (`remember` / `recall` / `forget` / `improve`, where feedback refines edge weights), 14+ retrieval modes with auto-routing between graph traversal and vector search; 30+ data sources (files, Slack, Notion, audio, images), default fully-embedded stack (SQLite + LanceDB + Kuzu) or Neo4j / Neptune / pgvector at scale; MCP server + native integrations for Claude Agent SDK, LangGraph, CrewAI, and Google ADK; 0.93 correctness on HotPotQA multi-hop Q&A vs ~0.4 for base RAG; $7.5M seed (Feb 2026), 70+ production deployments including Bayer; pipeline runs grew 2k → 1M+ in 2026 (Python, Apache-2.0, 32k+ stars, actively maintained Oct 2026) |
+| [**A-MEM**](https://github.com/WujiangXu/A-mem) | ![](https://img.shields.io/github/stars/WujiangXu/A-mem?style=flat-square) | Zettelkasten-style agentic memory ([NeurIPS 2025](https://arxiv.org/abs/2502.12110), Wujiang Xu et al.) — the write-time organization camp: each new episode is distilled into a structured note (keywords, tags, contextual description) that is *automatically linked* to related past notes, and an LLM-driven memory-evolution pass rewrites older notes when new context or contradictions arrive, so the graph reorganizes itself instead of silently drifting; dual store — ChromaDB vector similarity + NetworkX link traversal for relationship-aware recall; ~5.8× ROUGE-L over flat vector retrieval on LoCoMo multi-hop; the **Oct 2026 follow-up [FlexA-Mem](https://arxiv.org/abs/2610.33274)** makes the note timeline budget-adaptive — every step sees the whole history as compressed notes and expands the most relevant in place to fit any token budget, evaluated on LongMemEval-S, LoCoMo, SWE-bench Verified, and AppWorld; ships an MCP server for Cursor/VS Code, with the production-oriented implementation at [agiresearch/A-MEM](https://github.com/agiresearch/A-MEM) (Python, MIT, ~1k stars, actively maintained Oct 2026) |
+| [**HiMem**](https://github.com/jojopdq/HiMem) | ![](https://img.shields.io/github/stars/jojopdq/HiMem?style=flat-square) | Cognitively-inspired **hierarchical** long-term memory for long-horizon agents ([arXiv 2601.06377](https://arxiv.org/abs/2601.06377), Macau Univ. of Science and Technology, Jan 2026; built on the Mem0 codebase) — two semantically linked layers: **Episode Memory**, segmented by a Topic-Aware Event–Surprise dual-channel strategy that preserves fine-grained, event-level evidence aligned with the original interaction flow, and **Note Memory**, distilled through a multi-stage extraction pipeline (objective facts / user preferences / user profiles) into stable abstract knowledge; hybrid and best-effort retrieval strategies bridge the two, and **conflict-aware Memory Reconsolidation** revises stored knowledge from retrieval feedback so the memory self-evolves instead of drifting; **80.71% overall GPT-Score on LoCoMo** (~600-turn, multi-session dialogues) vs A-MEM 51.88% / Mem0 68.74% / SeCom 69.03%, with 70.92% multi-hop and 74.77% temporal-reasoning scores; ablations show the episode layer is load-bearing for multi-hop/temporal tasks while the note layer adds consistent gains — fidelity and abstraction are complementary, not interchangeable (Python, Apache-2.0, actively maintained 2026) |
+| [**MemOS**](https://github.com/MemTensor/MemOS) | ![](https://img.shields.io/github/stars/MemTensor/MemOS?style=flat-square) | A Memory *Operating System* for LLMs and agents (MemTensor / IAAR-Shanghai; [arXiv 2507.03724](https://arxiv.org/abs/2507.03724)) — the memory-OS camp: one unified **store / retrieve / manage** API over an inspectable, editable **memory graph** (not a black-box embedding store), with composable **MemCubes** — multi-cube knowledge-base management supporting isolation, controlled sharing, and dynamic composition across users, projects, and agents — and native multi-modal memory (text, images, tool traces, personas); self-evolves across L1 traces → L2 policies → L3 world models → crystallized **Skills**, with hybrid retrieval (FTS5 + vector), smart dedup, and local-first SQLite storage; **88.83 on LoCoMo / 89.20 on LongMemEval** and leads **OmniMemEval** (a unified eval of 14 commercial memory products across ten datasets), lifting OpenClaw average task completion 36.63% → 50.87% across five agent tasks; the 2026 line is harness-integration-first — official local (100% on-device) and cloud (72% lower token usage) memory plugins for OpenClaw, Hermes Agent, and DeepSeek Harness (`dsh`) (**MemOS 2.0** "Stardust", July 2026 benchmark push; Python, Apache-2.0, 12k+ stars, actively maintained Oct 2026) |
 
 ---
 
@@ -870,6 +1165,7 @@ The infrastructure layer that wraps an LLM: tool access, lifecycle management, p
 | **Anthropic** | [How we contain Claude across products](https://www.anthropic.com/engineering/how-we-contain-claude) (May 2026) | Agent Safety / Containment — why per-turn human approval fails (users approve routinely), and how claude.ai, Claude Code, and Claude Cowork each cap blast radius via sandboxes, VMs, and egress controls |
 | **Anthropic** | [Loop Engineering: Getting Started with Loops](https://claude.com/blog/getting-started-with-loops) (July 2026) | Agentic Coding / Autonomous Loops — official guide to `/goal`, `/loop`, `/schedule` primitives and verification skills for hands-off coding agents |
 | **Anthropic** | [The "think" tool: Enabling Claude to stop and think](https://www.anthropic.com/engineering/claude-think-tool) (Aug 2026) | Tool Use / Structured Reasoning — dedicated `think` tool checkpoints for complex, sequential tool-use chains and policy-heavy decisions |
+| **Anthropic** | [Agentic coding is straining CI: Here's how we scaled test impact analysis at Anthropic](https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic) (Sept 2026) | Agentic Coding / CI Infrastructure — Claude writes ~80% of merged code and CI job volume grew 25× in six months; documents three failed scaling patches (bigger machine → package sharding → daily restarts, 70 → 29 → <1 days of headroom) before rebuilding the listener/selector test-impact service as a stateless, database-backed journal with horizontally scalable workers; one engineer rebuilt it in 3 weeks |
 | **OpenAI** | [GPT-5.4 Prompt Guidance](https://developers.openai.com/api/docs/guides/prompt-guidance) (Mar 2026) | Prompting — output contracts, tool persistence, reasoning effort tuning |
 | **OpenAI** | [GPT-5.2 Prompting Guide](https://cookbook.openai.com/examples/gpt-5/gpt-5-2_prompting_guide) (Dec 2025) | Prompting — enterprise/agentic workloads, structured reasoning, tool grounding |
 | **OpenAI** | [Codex-Max Prompting Guide](https://cookbook.openai.com/examples/gpt-5/gpt-5-1-codex-max_prompting_guide) (Feb 2026) | Agentic Coding — autonomy/persistence tuning, reasoning effort levels, phase parameter |
@@ -1010,6 +1306,7 @@ The infrastructure layer that wraps an LLM: tool access, lifecycle management, p
 | [SkillClaw: Collective Skill Evolution with Agentic Evolver (April 2026)](https://arxiv.org/abs/2604.08377) | Cross-user trajectories continuously aggregated and refined by autonomous evolver into shared skill repository — collective skill evolution in multi-user agent ecosystems; 142 HF likes | [PDF](https://arxiv.org/pdf/2604.08377) |
 | [SKILL0: In-Context Agentic RL for Skill Internalization (April 2026)](https://arxiv.org/abs/2604.02268) | Progressively withdraws skill documentation during training until agents operate zero-shot — +9.7% on ALFWorld, +6.6% on Search-QA with <0.5k tokens per step; 133 HF likes | [PDF](https://arxiv.org/pdf/2604.02268) |
 | [Memento-Skills: Let Agents Design Agents (2026)](https://arxiv.org/abs/2603.18743) | Read-Write Reflective Learning over executable skill libraries — agents retrieve, execute, reflect, and rewrite their own skills without retraining the base model; evaluated on HLE and GAIA | [PDF](https://arxiv.org/pdf/2603.18743) |
+| [Self-Harness: Harnesses That Improve Themselves (June 2026)](https://arxiv.org/abs/2606.09498) | Fixed model mines its own execution traces — Weakness Mining → minimal Harness Proposal → regression-gated Proposal Validation — and keeps only edits that survive regression testing; improves all 9 model×benchmark combinations on Terminal-Bench-2.0, SWE-bench Verified, and AppWorld across three base models (MiniMax M2.5, Qwen3.5-35B-A3B, GLM-5), up to +132% relative, no weight updates or external engineer | [PDF](https://arxiv.org/pdf/2606.09498) |
 
 ### Agent Safety
 
@@ -1100,6 +1397,7 @@ The infrastructure layer that wraps an LLM: tool access, lifecycle management, p
 | [Instruction Bleed: Cross-Module Interference in Prompt-Composed Agentic Systems (June 2026)](https://arxiv.org/abs/2606.26356) | Formalizes Compositional Behavioral Leakage (CBL) — prompt modules sharing a context window silently shift each other's behavior; introduces a three-channel perturbation protocol (volume / content / form) and detects Cohen's d = 0.63 content-channel interference in a deployed job-evaluation agent; sub-threshold compounding failures invisible to standard QA | [PDF](https://arxiv.org/pdf/2606.26356) |
 | [Enforcing Hierarchical Instruction-Following via Neuro-Symbolic Alignment (April 2026)](https://arxiv.org/abs/2604.09075) | NSHA: formulates hierarchical instruction resolution as constraint satisfaction, solved with SAT solver-guided inference-time reasoning — resolves conflicts between system prompts, user instructions, and tool outputs | [PDF](https://arxiv.org/pdf/2604.09075) |
 | [DEFT: Distribution-guided Efficient Fine-Tuning for Human Alignment (April 2026)](https://arxiv.org/abs/2604.01787) | Distribution-guided efficient fine-tuning for alignment — uses data distribution properties to guide selective parameter updates, improving alignment quality with reduced compute | [PDF](https://arxiv.org/pdf/2604.01787) |
+| [StructEval: Benchmarking LLMs’ Capabilities to Generate Structural Outputs (TMLR 2025)](https://openreview.net/forum?id=buDwV7LUA7) | 2,035 examples spanning 18 text and renderable formats and 44 generation/conversion task types; evaluates format adherence and structural correctness with format-specific syntax, keyword, render, and VQA checks | [PDF](https://arxiv.org/pdf/2505.20139) |
 
 ### Multimodal Prompting
 
@@ -1130,6 +1428,7 @@ The infrastructure layer that wraps an LLM: tool access, lifecycle management, p
 |-------|-----------------|
 | [Building Enterprise Realtime Voice Agents from Scratch (2026)](https://arxiv.org/abs/2603.05413) | Salesforce AI Research: complete tutorial for production voice agents — cascaded streaming pipeline (STT→LLM→TTS), ~750ms TTFA, function calling, full open-source codebase with 9 chapters | [PDF](https://arxiv.org/pdf/2603.05413) |
 | [VoiceMem: Streaming Dual-Brain Memory for Real-Time Interaction (Aug 2026)](https://arxiv.org/abs/2608.26005) | Tsinghua: long-term memory for realtime voice agents — "left brain" stores compressed facts (Mem0-level accuracy at ~300 tokens/query), "right brain" tracks emotional attribution across nodes; fully streaming architecture with speculative prefetch keeps added latency near zero; open model family + ChatMem-400K dataset | [PDF](https://arxiv.org/pdf/2608.26005) |
+| [MP-Bench: Evaluating Voice Agents as a Multiparty Conversation Participant (Sept 2026)](https://arxiv.org/abs/2609.13076) | First benchmark for voice agents as *active participants* in 4-party conversations — explicit/implicit/negative turn-taking conditions (when to speak vs. stay silent), response appropriateness, and comprehension QA across dispute-mediation and turn-based-game scenarios; 12 state-of-the-art voice agents score ≤22–33% on multiparty comprehension and near chance on implicit/negative turn-taking; ablations trace failure to isolating speaker identity and audio cues, not instruction following (CMU/UCLA/UT Austin/NTU, EMNLP 2026 Findings; [open code](https://github.com/atosystem/MP-Bench)) | [PDF](https://arxiv.org/pdf/2609.13076) |
 
 **Project:** [xzf-thu/VoiceMem](https://github.com/xzf-thu/VoiceMem) ![](https://img.shields.io/github/stars/xzf-thu/VoiceMem?style=flat-square) — open-source implementation of the dual-brain streaming memory above — pluggable memory engine, pluggable TTS layer, fully decoupled components (Apache-2.0, 1.7k+ stars, actively maintained 2026)
 
@@ -1152,6 +1451,7 @@ The infrastructure layer that wraps an LLM: tool access, lifecycle management, p
 | [Ollama](https://github.com/ollama/ollama) | Run LLMs locally — desktop app, multimodal, structured outputs ![](https://img.shields.io/github/stars/ollama/ollama?style=flat-square) |
 | [Semantic Kernel](https://github.com/microsoft/semantic-kernel) | Microsoft's LLM SDK — now merging with AutoGen into [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) (2026) |
 | [TensorZero](https://www.tensorzero.com/) | LLM gateway + observability + optimization |
+| [**OmniRoute**](https://github.com/cheaper-inference/OmniRoute) | Free MIT AI gateway — one OpenAI-compatible endpoint across 375 providers (150+ free tiers) and 1,400+ models (Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax); quota-aware auto-fallback, built-in token compression (15–95% savings, integrates caveman), MCP/A2A support, Desktop/PWA; works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot; TypeScript, 85k+ stars, v3.8 line Oct 2026, pushed daily (Feb 2026) ![](https://img.shields.io/github/stars/cheaper-inference/OmniRoute?style=flat-square) |
 | [Outlines](https://github.com/dottxt-ai/outlines) | Structured text generation and constrained outputs |
 | [PydanticAI](https://github.com/pydantic/pydantic-ai) | Official Pydantic agent runtime — typed tools, structured outputs, evals, production-ready (V1 stable) ![](https://img.shields.io/github/stars/pydantic/pydantic-ai?style=flat-square) |
 | [Instructor](https://github.com/instructor-ai/instructor) | Most widely used library for structured LLM outputs — typed extraction from any model, 3M+ monthly downloads |
